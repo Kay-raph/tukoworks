@@ -1,0 +1,1281 @@
+body,
+html{
+	margin:0;
+	padding:0;
+	background-color: white;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2px;
+	scroll-behavior: smooth;
+}
+
+nav a:hover{
+	text-decoration:none;
+	color: #ea9c14;
+	transition: 0.5s;
+}
+
+nav{
+	position: relative;
+	display:inline-block;
+	background-color: #624cd5;
+	width: 100%;
+	top: 0;
+	margin: 0;
+	position: scroll;
+}
+
+nav a{
+	float: right;
+	margin: 5px;
+	margin-right: 50px;
+	padding: 40px;
+	color: white;
+	font-weight: 800;
+	font-size: 20px;
+	text-decoration:none;
+	line-height:1;
+	text-transform: uppercase;
+}
+nav img{
+	width: 180px;
+	height: auto;
+	margin-top: 0px;
+	margin-left: 20px;
+	padding: 10px;
+}
+.sdnav{
+    display: none;
+}
+.sdnav img{
+    margin-left: 1080px;
+    height: 50px;
+    width: 100px;
+    margin-top: -50px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #624cd5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 12px 12px 12px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    float: left;
+    color: #ffffff;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenav a:hover {
+    color: #000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+}
+.fronta{
+	width: 100%;
+	margin: auto;
+	background-image: url("../imgs/hire1.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: 55% 130%;
+    height: 270px;
+  }
+.frontb p{
+	text-align: center;
+	color: #624cd5;
+	font-size: 28px;
+	font-weight: bold;
+}
+.find{
+	background-color: #624cd5;
+	border-radius: 50px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 20%;
+	margin-left: 20%;
+	transition: all 0.6s;
+}
+.post{
+	background-color: #624cd5;
+	border-radius: 50px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 20%;
+	margin-left: 20%;
+	transition: all 0.6s;
+	text-decoration: none;
+}
+.find:hover{
+	background-color: #ea9c14;
+	transition: 0.6s;
+}
+.post:hover{
+	background-color: #ea9c14;
+	transition: 0.6s;
+}
+#p1, #p2{
+font-size: 20px;
+color: white;
+margin: 20px;
+font-weight: 800;
+text-align: center;
+}
+.find #p1:hover{
+	text-decoration: none;
+	transition: all 0.6s;
+}
+.post #p2:hover{
+	text-decoration: none;
+	transition: all .6s;
+}
+/*hamburger menu*/
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	nav{
+		position: relative;
+		display:inline-block;
+		background-color: #624cd5;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: scroll;
+	}
+	nav a{
+		display: none;
+		margin: 1px;
+		color: white;
+		font-weight: normal;
+		font-size: 6px;
+		text-decoration:none;
+	}
+	nav img{
+		max-width: 20%;
+		height: auto;
+		margin-top: 0px;
+		margin-left: -15px;
+		padding: 10px;
+	}
+	.sdnav{
+        display: block;
+    }
+    .sdnav img{
+        margin-left: 180px;
+        height: 50px;
+        width: 100px;
+        margin-top: -10px;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #624cd5;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: block;
+    }
+    
+    .sidenav a {
+        padding: 18px 18px 18px 42px;
+        text-decoration: none;
+        font-size: 19px;
+        float: left;
+        color: #ffffff;
+        display: block;
+        transition: 0.5s;
+        margin: 15px 0;
+        overflow: hidden;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+	.fronta{
+		width: 100%;
+		margin: auto;
+		background-image: url("../imgs/hire1.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 120% 120%;
+		height: 200px;
+	  }
+	.frontb p{
+		text-align: center;
+		color: rgb(98, 76, 213);
+		font-size: 22px;
+		font-weight: 800;
+	}
+	.find{
+		background-color: #624cd5;
+		border-radius: 15px;
+		outline: none;
+		display: block;
+		width: 50%;
+		margin: auto;
+		transition: all 0.6s;
+	}
+	.post{
+		background-color: #624cd5;
+		border-radius: 15px;
+		outline: none;
+		display: block;
+		width: 50%;
+		margin: auto;
+		transition: all 0.6s;
+	}
+	.find:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	.post:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	#p1, #p2{
+	font-size: 20px;
+	color: white;
+	margin: 20px;
+	font-weight: 600;
+	text-align: center;
+	}
+	#p1:hover{
+		text-decoration: none;
+	}
+	#p2:hover{
+		text-decoration: none;
+	}
+
+}
+/* ----------- Android ----------- */
+
+/* Portrait*/
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 576px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+  {
+  nav{
+	  display: none;
+	  position: relative;
+	  display:inline-block;
+	  background-color: #624cd5;
+	  width: 100%;
+	  top: 0;
+	  margin: 0;
+	  position: scroll;
+  }
+  nav a{
+	  display: none;
+	  padding: 5px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 4px;
+	  text-decoration:none;
+  }
+  nav img{
+	  position: relative;
+	  width: 20%;
+	  height: auto;
+	  margin-top: -20px;
+	  margin-left: -15px;
+	  padding: 10px;
+  }
+  .sdnav{
+	display: block;
+	background-color: #624cd5;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 30;
+	left: 20;
+	background-color: #624cd5;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	display: block;
+}
+
+.sidenav a {
+	padding: 18px 18px 18px 42px;
+	text-decoration: none;
+	font-size: 19px;
+	float: left;
+	color: #ffffff;
+	display: block;
+	transition: 0.5s;
+	margin: 15px 0;
+	overflow: hidden;
+}
+.sdnav img{
+	margin-left: 200px;
+	height: auto;
+	width: 33%;
+	margin-top: 0px;
+	padding: 5px;
+}
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 30px;
+	margin-left: 20px;
+	float: right;
+	padding: 5px;
+}
+  .fronta{
+	  width: 100%;
+	  margin: auto;
+	  background-image: url("../imgs/hire1.png");
+	  background-repeat: no-repeat;
+	  background-attachment: scroll;
+	  background-position: center;
+	  background-size: 120% 120%;
+	  height: 200px;
+	}
+  .frontb p{
+	  text-align: center;
+	  color: rgb(98, 76, 213);
+	  font-size: 22px;
+	  font-weight: 800;
+  }
+  .find{
+	  background-color: #624cd5;
+	  border-radius: 15px;
+	  outline: none;
+	  display: block;
+	  width: 50%;
+	  margin: auto;
+	  transition: all 0.6s;
+  }
+  .post{
+	  background-color: #624cd5;
+	  border-radius: 15px;
+	  outline: none;
+	  display: block;
+	  width: 50%;
+	  margin: auto;
+	  transition: all 0.6s;
+  }
+  .find:hover{
+	  background-color: #ea9c14;
+	  transition: 0.6s;
+  }
+  .post:hover{
+	  background-color: #ea9c14;
+	  transition: 0.6s;
+  }
+  #p1, #p2{
+  font-size: 20px;
+  color: white;
+  margin: 20px;
+  font-weight: 600;
+  text-align: center;
+  }
+  #p1:hover{
+	  text-decoration: none;
+  }
+  #p2:hover{
+	  text-decoration: none;
+  }
+}
+@media only screen and (min-width: 576px) 
+       and (max-width: 767.98px) {
+		nav{
+			position: relative;
+			display:inline-block;
+			background-color: #624cd5;
+			width: 100%;
+			top: 0;
+			margin: 0;
+			position: scroll;
+		}
+		nav a{
+			display: none;
+			padding: 5px;
+			color: white;
+			font-weight: bold;
+			font-size: 4px;
+			text-decoration:none;
+		}
+		nav img{
+			position: relative;
+			max-width: 40%;
+			height: auto;
+			margin-top: 0px;
+			margin-left: -15px;
+			padding: 10px;
+		}
+		.fronta{
+			width: 100%;
+			margin: auto;
+			background-image: url("../imgs/hire1.png");
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+			background-position: center;
+			background-size: 120% 120%;
+			height: 200px;
+		  }
+		.frontb p{
+			text-align: center;
+			color: rgb(98, 76, 213);
+			font-size: 22px;
+			font-weight: 800;
+		}
+		.find{
+			background-color: #624cd5;
+			border-radius: 15px;
+			outline: none;
+			display: block;
+			width: 50%;
+			margin: auto;
+			transition: all 0.6s;
+		}
+		.post{
+			background-color: #624cd5;
+			border-radius: 15px;
+			outline: none;
+			display: block;
+			width: 50%;
+			margin: auto;
+			transition: all 0.6s;
+		}
+		.find:hover{
+			background-color: #ea9c14;
+			transition: 0.6s;
+		}
+		.post:hover{
+			background-color: #ea9c14;
+			transition: 0.6s;
+		}
+		#p1, #p2{
+		font-size: 10px;
+		color: white;
+		margin: 10px;
+		font-weight: 600;
+		text-align: center;
+		}
+		#p1:hover{
+			text-decoration: none;
+		}
+		#p2:hover{
+			text-decoration: none;
+		}
+
+}
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) 
+  {
+
+	nav{
+		display: none;
+		position: relative;
+		display:inline-block;
+		background-color: #624cd5;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: scroll;
+	}
+	nav a{
+		display: none;
+		margin: 1px;
+		color: white;
+		font-weight: normal;
+		font-size: 8px;
+		text-decoration:none;
+		text-transform: uppercase;
+	}
+	nav img{
+		display: none;
+		max-width: 50%;
+		height: auto;
+		margin-top: 0px;
+		margin-left: -15px;
+		padding: 10px;
+	}
+	.sdnav{
+		display: block;
+		background-color: #624cd5;
+	}
+	
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #624cd5;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		display: block;
+	}
+	
+	.sidenav a {
+		padding: 18px 18px 18px 42px;
+		text-decoration: none;
+		font-size: 19px;
+		float: left;
+		color: #ffffff;
+		display: block;
+		transition: 0.5s;
+		margin: 15px 0;
+		overflow: hidden;
+	}
+	.sdnav img{
+		margin-left: 200px;
+		height: auto;
+		width: 33%;
+		margin-top: 0px;
+		padding: 5px;
+	}
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 30px;
+		margin-left: 20px;
+		float: right;
+	}
+	.fronta{
+		width: 100%;
+		margin: auto;
+		background-image: url("../imgs/hire1.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 120% 120%;
+		height: 200px;
+	  }
+	.frontb p{
+		text-align: center;
+		color: rgb(98, 76, 213);
+		font-size: 22px;
+		font-weight: 800;
+	}
+	.find{
+		background-color: #624cd5;
+		border-radius: 15px;
+		outline: none;
+		display: block;
+		width: 50%;
+		margin: auto;
+		transition: all 0.6s;
+	}
+	.post{
+		background-color: #624cd5;
+		border-radius: 15px;
+		outline: none;
+		display: block;
+		width: 50%;
+		margin: auto;
+		transition: all 0.6s;
+	}
+	.find:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	.post:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	#p1, #p2{
+	font-size: 20px;
+	color: white;
+	margin: 20px;
+	font-weight: 600;
+	text-align: center;
+	}
+	#p1:hover{
+		text-decoration: none;
+	}
+	#p2:hover{
+		text-decoration: none;
+	}
+  }
+  /* Landscape */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+	nav{
+		display: none;
+		position: relative;
+		display:inline-block;
+		background-color: #624cd5;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: scroll;
+	}
+	nav a{
+		display: none;
+		margin: 1px;
+		color: white;
+		font-weight: normal;
+		font-size: 8px;
+		text-decoration:none;
+		text-transform: uppercase;
+	}
+	nav img{
+		max-width: 50%;
+		height: auto;
+		margin-top: 0px;
+		margin-left: -15px;
+		padding: 10px;
+	}
+	.fronta{
+		width: 100%;
+		margin: auto;
+		background-image: url("../imgs/hire1.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 120% 120%;
+		height: 300px;
+	  }
+	.frontb p{
+		text-align: center;
+		color: rgb(98, 76, 213);
+		font-size: 22px;
+		font-weight: 800;
+	}
+	.find{
+		background-color: #624cd5;
+		border-radius: 15px;
+		outline: none;
+		display: block;
+		width: 30%;
+		margin: auto;
+		transition: all 0.6s;
+	}
+	.post{
+		background-color: #624cd5;
+		border-radius: 15px;
+		outline: none;
+		display: block;
+		width: 30%;
+		margin: auto;
+		transition: all 0.6s;
+	}
+	.find:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	.post:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	#p1, #p2{
+	font-size: 20px;
+	color: white;
+	margin: 20px;
+	font-weight: 600;
+	text-align: center;
+	}
+	#p1:hover{
+		text-decoration: none;
+	}
+	#p2:hover{
+		text-decoration: none;
+	}
+
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)  { 
+	nav{
+		display: none;
+		position: relative;
+		display:inline-block;
+		background-color: #624cd5;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: scroll;
+	}
+	nav a{
+		display: none;
+		margin: 1px;
+		color: white;
+		font-weight: normal;
+		font-size: 8px;
+		text-decoration:none;
+		text-transform: uppercase;
+	}
+	nav img{
+		max-width: 50%;
+		height: auto;
+		margin-top: 0px;
+		margin-left: -15px;
+		padding: 10px;
+	}
+	.fronta{
+		width: 100%;
+		margin: auto;
+		background-image: url("../imgs/hire1.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 120% 120%;
+		height: 300px;
+	  }
+	.frontb p{
+		text-align: center;
+		color: rgb(98, 76, 213);
+		font-size: 22px;
+		font-weight: 800;
+	}
+	.find{
+		background-color: #624cd5;
+		border-radius: 15px;
+		outline: none;
+		display: block;
+		width: 40%;
+		margin: auto;
+		transition: all 0.6s;
+	}
+	.post{
+		background-color: #624cd5;
+		border-radius: 15px;
+		outline: none;
+		display: block;
+		width: 40%;
+		margin: auto;
+		transition: all 0.6s;
+	}
+	.find:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	.post:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	#p1, #p2{
+	font-size: 20px;
+	color: white;
+	margin: 20px;
+	font-weight: 600;
+	text-align: center;
+	}
+	#p1:hover{
+		text-decoration: none;
+	}
+	#p2:hover{
+		text-decoration: none;
+	}
+
+}
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+	nav{
+		position: relative;
+		display:inline-block;
+		background-color: #624cd5;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: scroll;
+	}
+	nav a{
+		margin: 1px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+		text-decoration:none;
+		text-transform: uppercase;
+		padding: 15px;
+		margin-top: 25px;
+	}
+	nav img{
+		max-width: 20%;
+		height: auto;
+		margin-top: 0px;
+		margin-left: -15px;
+		padding: 5px;
+	}
+	.fronta{
+		width: 100%;
+		margin: auto;
+		background-image: url("../imgs/hire1.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 120% 120%;
+		height: 300px;
+	  }
+	.frontb p{
+		text-align: center;
+		color: rgb(98, 76, 213);
+		font-size: 22px;
+		font-weight: 800;
+	}
+	.find{
+		background-color: #624cd5;
+	border-radius: 30px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 35%;
+	margin-left: 10%;
+	transition: all 0.6s;
+	}
+	.post{
+		background-color: #624cd5;
+	border-radius: 30px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 35%;
+	margin-left: 10%;
+	transition: all 0.6s;
+	}
+	.find:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	.post:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	#p1, #p2{
+	font-size: 20px;
+	color: white;
+	margin: 20px;
+	font-weight: 600;
+	text-align: center;
+	}
+	#p1:hover{
+		text-decoration: none;
+	}
+	#p2:hover{
+		text-decoration: none;
+	}
+
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+	nav{
+		position: relative;
+		display:inline-block;
+		background-color: #624cd5;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: scroll;
+	}
+	nav a{
+		margin: 1px;
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+		text-decoration:none;
+		text-transform: uppercase;
+		padding: 15px;
+		margin-top: 25px;
+	}
+	nav img{
+		max-width: 30%;
+		height: auto;
+		margin-top: 0px;
+		margin-left: -15px;
+		padding: 5px;
+	}
+	.fronta{
+		width: 100%;
+		margin: auto;
+		background-image: url("../imgs/hire1.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 120% 120%;
+		height: 300px;
+	  }
+	.frontb p{
+		text-align: center;
+		color: rgb(98, 76, 213);
+		font-size: 22px;
+		font-weight: 800;
+	}
+	.find{
+		background-color: #624cd5;
+	border-radius: 30px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 35%;
+	margin-left: 10%;
+	transition: all 0.6s;
+	}
+	.post{
+		background-color: #624cd5;
+	border-radius: 30px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 35%;
+	margin-left: 10%;
+	transition: all 0.6s;
+	}
+	.find:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	.post:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	#p1, #p2{
+	font-size: 20px;
+	color: white;
+	margin: 20px;
+	font-weight: 600;
+	text-align: center;
+	}
+	#p1:hover{
+		text-decoration: none;
+	}
+	#p2:hover{
+		text-decoration: none;
+	}
+}
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+	nav{
+		position: relative;
+		display:inline-block;
+		background-color: #624cd5;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: scroll;
+	}
+	nav a{
+		margin: 1px;
+		color: white;
+		font-weight: bold;
+		font-size: 14px;
+		text-decoration:none;
+		text-transform: uppercase;
+		padding: 15px;
+		margin-top: 35px;
+	}
+	nav img{
+		max-width: 30%;
+		height: auto;
+		margin-top: 0px;
+		margin-left: -15px;
+		padding: 5px;
+	}
+	.fronta{
+		width: 100%;
+		margin: auto;
+		background-image: url("../imgs/hire1.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 120% 120%;
+		height: 300px;
+	  }
+	.frontb p{
+		text-align: center;
+		color: rgb(98, 76, 213);
+		font-size: 22px;
+		font-weight: 800;
+	}
+	.find{
+		background-color: #624cd5;
+	border-radius: 30px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 40%;
+	margin-left: 6%;
+	transition: all 0.6s;
+	}
+	.post{
+		background-color: #624cd5;
+	border-radius: 30px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 40%;
+	margin-left: 6%;
+	transition: all 0.6s;
+	}
+	.find:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	.post:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	#p1, #p2{
+	font-size: 18px;
+	color: white;
+	margin: 20px;
+	font-weight: 600;
+	text-align: center;
+	}
+	#p1:hover{
+		text-decoration: none;
+	}
+	#p2:hover{
+		text-decoration: none;
+	}
+}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	nav{
+		position: relative;
+		display:inline-block;
+		background-color: #624cd5;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: scroll;
+	}
+	nav a{
+		margin: 1px;
+		color: white;
+		font-weight: bold;
+		font-size: 16px;
+		text-decoration:none;
+		text-transform: uppercase;
+		padding: 15px;
+		margin-top: 35px;
+	}
+	nav img{
+		max-width: 30%;
+		height: auto;
+		margin-top: 0px;
+		margin-left: -15px;
+		padding: 5px;
+	}
+	.fronta{
+		width: 100%;
+		margin: auto;
+		background-image: url("../imgs/hire1.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 120% 120%;
+		height: 400px;
+	  }
+	.frontb p{
+		text-align: center;
+		color: rgb(98, 76, 213);
+		font-size: 22px;
+		font-weight: 800;
+	}
+	.find{
+		background-color: #624cd5;
+	border-radius: 30px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 40%;
+	margin-left: 6%;
+	transition: all 0.6s;
+	}
+	.post{
+		background-color: #624cd5;
+	border-radius: 30px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 40%;
+	margin-left: 6%;
+	transition: all 0.6s;
+	}
+	.find:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	.post:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	#p1, #p2{
+	font-size: 18px;
+	color: white;
+	margin: 20px;
+	font-weight: 600;
+	text-align: center;
+	}
+	#p1:hover{
+		text-decoration: none;
+	}
+	#p2:hover{
+		text-decoration: none;
+	}
+
+}
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	nav{
+		position: relative;
+		display:inline-block;
+		background-color: #624cd5;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: scroll;
+	}
+	nav a{
+		margin: 1px;
+		color: white;
+		font-weight: bold;
+		font-size: 16px;
+		text-decoration:none;
+		text-transform: uppercase;
+		padding: 15px;
+		margin-top: 35px;
+	}
+	nav img{
+		max-width: 30%;
+		height: auto;
+		margin-top: 0px;
+		margin-left: -15px;
+		padding: 5px;
+	}
+	.fronta{
+		width: 100%;
+		margin: auto;
+		background-image: url("../imgs/hire1.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 120% 120%;
+		height: 400px;
+	  }
+	.frontb p{
+		text-align: center;
+		color: rgb(98, 76, 213);
+		font-size: 22px;
+		font-weight: 800;
+	}
+	.find{
+		background-color: #624cd5;
+	border-radius: 30px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 40%;
+	margin-left: 6%;
+	transition: all 0.6s;
+	}
+	.post{
+		background-color: #624cd5;
+	border-radius: 30px;
+	outline: none;
+	display: inline-block;
+	padding: 0;
+	width: 40%;
+	margin-left: 6%;
+	transition: all 0.6s;
+	}
+	.find:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	.post:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	#p1, #p2{
+	font-size: 18px;
+	color: white;
+	margin: 20px;
+	font-weight: 600;
+	text-align: center;
+	}
+	#p1:hover{
+		text-decoration: none;
+	}
+	#p2:hover{
+		text-decoration: none;
+	}
+
+}

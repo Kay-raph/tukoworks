@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-password-validator.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/jquery-password-validator.css.map" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,500' rel='stylesheet' type='text/css'>
+    <link href="css/postjob.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+<style>
+    input[type="password"]:hover,
+    input[type="password"]:focus {
+        border-color: #BFB7FF;
+    }
+
+    .jq-password-validator__popover {
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+        color: #4E44A6;
+        padding: 1.5rem;
+        transition: all 0.2s;
+    }
+
+    .jq-password-validator__popover header {
+        font-weight: normal;
+        margin-bottom: 0.5rem;
+    }
+
+    em {
+        border-bottom: 1px dotted;
+        font-style: normal;
+    }
+
+    .is-valid {
+        color: #4E44A6;
+    }
+
+    .jq-password-validator__checkmark {
+        fill: #44A64D;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1><b>Post Job with us Today!</b></h1>
+        <div class="row">
+            <div class="column1" id="col1">
+                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_f755rjxp.json" mode="bounce" background="transparent"  speed="1"  style="width: 600px; height: 500px;" style="border-radius: 25px;"  loop  autoplay></lottie-player>
+            </div>
+            <div class="column2" id="col2">
+                <p><b id="p1">Login to Continue</b></p>
+                <form action="#" method="POST">
+                    <input id="emai" type="text" placeholder="Email" name="email" autocomplete="email" required>
+                    <input id="password1" type="password" placeholder="Password" name="psw" required minlength="6"
+                        maxlength="20">
+                    <center>
+                        <button><b>Login</b></button>
+                    </center>
+                </form><br>
+                <center>
+                    <p><b>Or Login Using</b></p>
+                    <a href=""><i class="fa fa-fw fa-facebook" id="status"></i></a>
+                    <a href=""><i class="fa fa-fw fa-google"></i></a>
+                    <a href=""><i class="fa fa-fw fa-linkedin"></i></a>
+                    <a href="postsignup.html">
+                        <p><b>Don't have an account?</b></p>
+                    </a>
+                </center>
+            </div>
+            <a href="index.html"><p><b>Back</b></p></a>
+        </div>
+        <script>
+            $("#password").passwordValidator({
+                required: ['length', 'lower', 'upper', 'digit'],
+                length: 12
+            });
+        </script>
+        <script>
+            var attempt = 3; // Variable to count number of attempts.
+// Below function Executes on click of login button.
+function validate(){
+var username = document.getElementById("ema").value;
+var password = document.getElementById("pwd").value;
+if ( username == "Formget" && password == "formget#123"){
+alert ("Login successfully");
+window.location = "profile.html"; // Redirecting to other page.
+return false;
+}
+else{
+attempt --;// Decrementing by one.
+alert("You have left "+attempt+" attempt;");
+// Disabling fields after 3 attempts.
+if( attempt == 0){
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+}
+        </script>
+    </div>
+</body>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/jquery.password-validator.min.js"></script>
+<script src="js/jquery.password-validator.js"></script>
+<script src="js/login.js"></script>
+
+</html>

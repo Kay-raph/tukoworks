@@ -1,0 +1,126 @@
+body,
+html{
+    margin:0;
+	padding:0;
+	background-color: white;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	scroll-behavior: smooth;
+}
+.container{
+    margin: 20px;
+}
+h1,p{
+    color: #624cd5;
+    font-weight: 600;
+    text-align: center;
+}
+.column2 #p1{
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    height: 400px;
+    margin: 50px;
+}
+.column1 {
+    float: left;
+    width: 50%;
+  }
+  .column2{
+    float: right;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* .column1{
+    background-image: url("../imgs/job4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+  } */
+  .column2{
+    float: right;
+  }
+  .column2 a{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .column2 p{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .column2 p:hover{
+    text-decoration: none;
+    transition: all .4s;
+    color: #ea9c14;
+  }
+  .column2 a:hover{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  form input{
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all 0.5s;
+      width: 50%;
+      outline: none;
+      background-color: #fff;
+      border-color: #624cd5;
+  }
+
+  form input[type]{
+      color: #624cd5;
+  }
+  button{
+      color: #ffffff;
+      margin: auto;
+      text-align: center;
+      padding: 5px;
+      width: 15%;
+      border-radius: 5px;
+      background-color: #624cd5;
+      outline: none;
+      transition: all .3s;
+  }
+  button:hover{
+      background-color: #ea9c14;
+      outline: none;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
