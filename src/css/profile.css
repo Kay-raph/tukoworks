@@ -157,6 +157,9 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
     transition: all 0.4s;
     outline: none;
   }
+  lottie-player{
+    margin: auto;
+  }
   /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
