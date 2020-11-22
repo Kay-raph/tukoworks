@@ -451,15 +451,14 @@ text-align: center;
 		padding: 10px;
 	}
 	.sdnav{
+		padding: 5px;
 		display: block;
 		background-color: #624cd5;
     }
-    .sdnav img{
-        margin-left: 180px;
+    .sidenav a img{
         height: 50px;
-        width: 100px;
-		margin-top: -10px;
-		display: none;
+		width: 100px;
+		display: none;	
     }
     .sidenav {
         height: 100%;
