@@ -128,7 +128,12 @@ h1,p{
     width: 600px;
     margin: auto;
   }
-  
+  #error_msg{
+    display: block;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+  }
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */

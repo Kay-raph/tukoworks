@@ -8,6 +8,7 @@
     <title>Sign Up</title>
 </head>
 <body>
+    <h1><b>Sign up to Post a Job with us!</b></h1>
     <div class="row justify-content-around">
         <div class="col-md-1" id="col1">
             <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_y3qfynfr.json" mode="bounce" background="transparent"  speed="1" loop autoplay></lottie-player>
@@ -20,22 +21,25 @@
 <a href="#" class="fa fa-linkedin"></a>
 <p><b>Or</b></p>
 </center>
-            <form action="#" method="POST">
-                <input id="ema" type="text" placeholder="Email" name="email" autocomplete="email" required>
-                <input id="password" type="password" placeholder="Password" name="psw" required minlength="6"
-                Other attributes: maxlength="maxChar" >
-                        <input id="conpassword" type="password" placeholder="Password" name="psw" required minlength="6"
-                        Other attributes: maxlength="maxChar" > 
-                        <center>
-                    <!-- <button onclick=""><b>Signup</b></button> -->
-                        <button formaction="profile.html">Sign Up</button>
-                </center>
-            </form><br>
+<form id="form" name="form" method="post" action="findsignup.php">
+    <input id="email" type="text" placeholder="Email" name="email" autocomplete="email" required>
+    <input id="password" type="password" placeholder="Password" name="psw" required Other
+        attributes: maxlength="maxChar">
+    <input id="confirm_password" type="password" placeholder="Confirm_Password" name="psw" required
+     Other attributes: maxlength="maxChar">
+    <center>
+        <button id="submit">Sign Up</button>
+        <br>
+        <p id="response" style="color:  red; font-weight: bold;"><b></b></p>
+        <span id="error_msg"></span>
+    </center>
+</form><br>
             <a href="postjoblogin.html"><p><b>Already a member</b></p></a>
         </div>
         <a href="index.html"><p><b>Back</b></p></a>
     </div>
 </body>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script src="signup.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="src/js/postsignup.js"></script>
 </html>
