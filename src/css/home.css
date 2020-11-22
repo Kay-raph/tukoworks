@@ -84,7 +84,8 @@ nav img{
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+	margin-left: 50px;
+	color: white;
 }
 
 @media screen and (max-height: 450px) {
@@ -499,7 +500,7 @@ text-align: center;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		background-position: center;
-		background-size: 80% 130%;
+		background-size: 120% 130%;
 		height: 200px;
 	  }
 	.frontb p{
@@ -540,6 +541,7 @@ text-align: center;
 	margin: 20px;
 	font-weight: 600;
 	text-align: center;
+	padding: 5px;
 	}
 	#p1:hover{
 		text-decoration: none;
