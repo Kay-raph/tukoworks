@@ -65,32 +65,34 @@ h1,p{
     text-decoration: none;
     transition: all .4s;
   }
-  form input{
-      display: block;
-      margin: 20px auto;
-      padding: 10px;
-      border-radius: 5px;
-      transition: all 0.5s;
-      width: 50%;
-      outline: none;
-      background-color: #fff;
-      border-color: #624cd5;
-  }
+form input{
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    transition: all 0.5s;
+    width: 50%;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all .3s;
+}
 
-  form input[type]{
-      color: #624cd5;
-  }
-  button{
-      color: #ffffff;
-      margin: auto;
-      text-align: center;
-      padding: 5px;
-      width: 15%;
-      border-radius: 5px;
-      background-color: #624cd5;
-      outline: none;
-      transition: all .3s;
-  }
+form input:hover{
+  transition: all 0.3s;
+    border: 2px solid #ea9c14;
+}
+button{
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    width: 15%;
+    border-radius: 5px;
+    background-color: #624cd5;
+    outline: none;
+    transition: all .3s;
+    border: none;
+}
   button:hover{
       background-color: #ea9c14;
       outline: none;

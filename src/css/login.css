@@ -62,16 +62,17 @@ h1,p{
       display: block;
       margin: 20px auto;
       padding: 10px;
-      border-radius: 5px;
       transition: all 0.5s;
       width: 50%;
       outline: none;
       background-color: #fff;
-      border-color: #624cd5;
+      border-radius: 5px;
+      transition: all .3s;
   }
 
-  form input[type]{
-      color: #624cd5;
+  form input:hover{
+    transition: all 0.3s;
+      border: 2px solid #ea9c14;
   }
   button{
       color: #ffffff;
@@ -83,6 +84,7 @@ h1,p{
       background-color: #624cd5;
       outline: none;
       transition: all .3s;
+      border: none;
   }
   button:hover{
       background-color: #ea9c14;

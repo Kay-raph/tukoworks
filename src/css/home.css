@@ -37,11 +37,11 @@ nav a{
 	text-transform: uppercase;
 }
 nav img{
-	width: 180px;
+	width: 150px;
 	height: auto;
-	margin-top: 0px;
+	margin-top: -10px;
 	margin-left: 20px;
-	padding: 10px;
+	padding: 0px;
 }
 .sdnav{
     display: none;
@@ -72,7 +72,8 @@ nav img{
     float: left;
     color: #ffffff;
     display: block;
-    transition: 0.5s;
+	transition: 0.5s;
+	font-weight: bold;
 }
 
 .sidenav a:hover {
@@ -178,24 +179,10 @@ text-align: center;
 		font-size: 6px;
 		text-decoration:none;
 	}
-	nav img{
-		display: none;
-		max-width: 20%;
-		height: auto;
-		margin-top: 0px;
-		margin-left: -15px;
-		padding: 10px;
-	}
+
 	.sdnav{
 		display: block;
 		background-color: #624cd5;
-    }
-    .sdnav img{
-        margin-left: 180px;
-        height: 50px;
-        width: 100px;
-		margin-top: -10px;
-		display: none;
     }
     .sidenav {
         height: 100%;
@@ -483,7 +470,7 @@ text-align: center;
         display: block;
         transition: 0.5s;
         margin: 15px 0;
-        overflow: hidden;
+		overflow: hidden;
     }
     .sidenav .closebtn {
         position: absolute;
@@ -632,7 +619,7 @@ text-align: center;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		background-position: center;
-		background-size: 80% 130%;
+		background-size: 110% 130%;
 		height: 200px;
 	  }
 	.frontb p{

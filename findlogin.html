@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/jquery-password-validator.css">
     </link>
@@ -67,7 +70,25 @@
                 <center>
                     <p><b>Or Login Using</b></p>
                     <a href=""><i class="fa fa-fw fa-facebook" id="status"></i></a>
-                    <a href=""><i class="fa fa-fw fa-google"></i></a>
+                    <!-- <a href=""><i class="fa fa-fw fa-google"> -->
+                        <a href=""><i class="fa fa-fw fa-google" data-onsuccess="onSignIn" data-theme="dark"></i>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      }
+    </script>
+                    </i></a>
                     <a href=""><i class="fa fa-fw fa-linkedin"></i></a>
                     <a href="findsignup.html">
                         <p><b>Don't have an account?</b></p>
