@@ -43,6 +43,11 @@ nav img{
 	margin-left: 20px;
 	padding: 0px;
 }
+h1{
+	color: #624cd5;
+	font-weight: bold;
+	text-align: center;
+}
 .sdnav{
     display: none;
 }
@@ -160,12 +165,19 @@ lottie-player{
 .col-sm{
 	font-weight: bolder;
 	color: #624cd5;
-	border: 5px solid #ea9c14;
+	border: 5px solid #624cd5;
 	border-radius: 30px;
 	margin: 10px;
 }
-.howitworks h1,h2, p{
+.howitworks h1,p{
 	color: #624cd5;
+}
+h2{
+	background-color: #624cd5;
+	color: white;
+	border-radius: 25px;
+	padding: 10px;
+	width: 60%;
 }
 /*hamburger menu*/
 
@@ -982,22 +994,21 @@ lottie-player{
 	
 	nav a{
 		float: right;
-		margin: 1px;
+		margin: 0px;
 		margin-right: 50px;
 		padding: 1px;
-		margin-top: 30px;
+		margin-top: 40px;
 		color: white;
-		font-weight: 800;
+		font-weight: bold;
 		font-size: 13px;
 		text-decoration:none;
-		line-height:1;
 		text-transform: uppercase;
 	}
 	nav img{
-		width: 150px;
+		width: 100px;
 		height: auto;
 		margin-top: 0px;
-		margin-left: -10px;
+		margin-left: 10px;
 		padding: 5px;
 	}
 	.sdnav{
@@ -1150,7 +1161,7 @@ lottie-player{
 		margin: 1px;
 		margin-right: 50px;
 		padding: 1px;
-		margin-top: 40px;
+		margin-top: 70px;
 		color: white;
 		font-weight: 800;
 		font-size: 22px;
@@ -1162,7 +1173,7 @@ lottie-player{
 		width: 180px;
 		height: auto;
 		margin-top: 0px;
-		margin-left: -10px;
+		margin-left: 20px;
 		padding: 5px;
 	}
 	.sdnav{

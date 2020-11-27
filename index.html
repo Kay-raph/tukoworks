@@ -25,7 +25,7 @@
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <a href="findlogin.html" class="signin" ng-click="active='signin'"><i class="fa fa-fw fa-sign-in"></i>sign in</a>
 		  <a href="findsignup.html" class="signup" click="active current='signup'"><i class="fa fa-fw fa-user"></i>sign up</a>
-		  <a href="findprofile.html" class="about" ng-click="active='about'"><i class="fa fa-fw fa-info-circle"></i>About us</a>
+		  <a href="findprofile.html" id="about" class="about" ng-click="active='about'"><i class="fa fa-fw fa-info-circle"></i>About us</a>
 		  <a href="index.html" class="home" ng-click="active='home'"><i class="fa fa-fw fa-question-circle"></i>Why crimson</a>		
 		  <a href=""><img src="logos\crm1.png" alt="CrimsonGroup"></a>
 		</div>
@@ -43,7 +43,7 @@ function closeNav() {
 	<nav id="navbar">
 		<a href="findlogin.html" class="signin" click="active current='login'"><i class="fa fa-fw fa-sign-in"></i>sign in</a>
 		<a href="findsignup.html" class="signup" click="active current='signup'"><i class="fa fa-fw fa-user"></i>sign up</a>
-		<a href="findprofile.html" class="about" click="active current='about'"><i class="fa fa-fw fa-info-circle"></i>About us</a>
+		<a href="findprofile.html" id="about" class="about" click="active current='about'"><i class="fa fa-fw fa-info-circle"></i>About us</a>
 		<a href="index.html" class="home" click="active current='home'"><i class="fa fa-fw fa-question-circle"></i>Why crimson</a>
 		<img src="logos\crm2.png" alt="CrimsonGroup">
 	</nav>
@@ -51,7 +51,7 @@ function closeNav() {
 	<br><br>
 	<div class="container">
 		<div class="frontb">
-			<p>"Connecting Talent to Opportunities and Opportunities to Talent"</p>
+			<h1>“connect to talent and jobs anywhere anytime”</h1>
 		</div>
 		<br><br>
 		<a href="findlogin.html">
@@ -65,14 +65,19 @@ function closeNav() {
 			</div>
 		</a>
 		<br><br>
-		<div class="fronta"></div><br>
-		<hr>
+		<div class="fronta">
+			<!-- <center>
+<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_xsnsvpbs.json"  background="transparent"  speed="1"  style="width: 500px; height: 300px;"  loop  autoplay></lottie-player>
+</center>		 -->
+</div><br>
+<hr style="height:3px; border-width:0; color: #624cd5; background-color: #624cd5">
 		<br>
 		<div class="howitworks">
-			<center><h1><b>Want to be part of Agile and Fast Growing Startups?</b></h1>
+			<center>
+				<h1><b>Want to be part of Agile and Fast Growing Startups?</b></h1>
 				<br>
 				<h2><b>Crimson will give you a perfect match.</b></h2><br>
-			<p><b>HOW IT WORKS</b><br>Finding a Job with Us.</p>
+			<p><b>Finding a Job with Us.<br>HOW IT WORKS</b>
 			<br>
 			<div class="row">
 				<div class="col-sm"><br>
@@ -90,7 +95,7 @@ function closeNav() {
 				<div class="col-sm"><br>
 				  STEP 3.
 				<br>
-				<p style="color: black; text-transform: uppercase;">Start Working at a Compnay.</p>
+				<p style="color: black; text-transform: uppercase;">Start Working at a Company.</p>
                 <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_gcroxmlt.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
 				</div>
 			  </div>
@@ -107,7 +112,7 @@ function closeNav() {
 		<div class="col-xs-12 col-sm-6 col-md-3">
 		<div class="widget subscribe no-box">
 		<h5 class="widget-title" style="font-weight: bold;">CRIMSON GROUP<span></span></h5>
-		<p>"Connecting Talent to Work and Work to Talent"</p>
+		<p>“connect to talent and jobs anywhere anytime”</p>
 	</div>
 		</div>
 		
@@ -133,7 +138,7 @@ function closeNav() {
 		<div class="thumb-content"><a href="#.">Partners</a></div>	
 		</li>
 		<li>
-		<div class="thumb-content"><a href="#.">About</a></div>	
+		<div class="thumb-content"><a href="#about">About</a></div>	
 		</li>
 		</ul>
 		</div>
@@ -175,5 +180,6 @@ function closeNav() {
 		</div>
 		</footer>
 </body>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </html>
