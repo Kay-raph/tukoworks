@@ -172,12 +172,13 @@ lottie-player{
 .howitworks h1,p{
 	color: #624cd5;
 }
-h2{
+h5{
 	background-color: #624cd5;
 	color: white;
 	border-radius: 25px;
 	padding: 10px;
-	width: 60%;
+	width: 40%;
+	font-weight: bold;
 }
 /*hamburger menu*/
 
