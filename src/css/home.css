@@ -160,6 +160,9 @@ lottie-player{
 .col-sm{
 	font-weight: bolder;
 	color: #624cd5;
+	border: 2px solid #ea9c14;
+	border-radius: 15px;
+	margin: 10px;
 }
 .howitworks h1,h2, p{
 	color: #624cd5;
