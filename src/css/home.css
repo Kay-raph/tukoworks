@@ -26,7 +26,7 @@ nav{
 
 nav a{
 	float: right;
-	margin: 5px;
+	margin-top: 15px;
 	margin-right: 50px;
 	padding: 40px;
 	color: white;
@@ -153,6 +153,17 @@ text-align: center;
 	text-decoration: none;
 	transition: all .6s;
 }
+lottie-player{
+	width: 300px;
+	height: 300px;
+}
+.col-sm{
+	font-weight: bolder;
+	color: #624cd5;
+}
+.howitworks h1,h2, p{
+	color: #624cd5;
+}
 /*hamburger menu*/
 
 /* ----------- iPhone 4 and 4S ----------- */
@@ -163,6 +174,7 @@ text-align: center;
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	nav{
+		display: none;
 		position: relative;
 		display:inline-block;
 		background-color: #624cd5;
@@ -172,7 +184,6 @@ text-align: center;
 		position: scroll;
 	}
 	nav a{
-		display: none;
 		margin: 1px;
 		color: white;
 		font-weight: normal;
@@ -181,10 +192,11 @@ text-align: center;
 	}
 
 	.sdnav{
-		display: block;
+		display: none;
 		background-color: #624cd5;
     }
     .sidenav {
+		display: none;
         height: 100%;
         width: 0;
         position: fixed;
