@@ -14,35 +14,19 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-//reference data collection
-var dataRef=firebase.database().ref("data");
+//Get values
+const email = document.getElementById("ema");
+const pwd = document.getElementById("password");
+const submit = document.getElementById("sub");
+const database = firebase.database();
+const rootRef = database.ref("flogin");
+//Add click event to submit button
 
-//Listen to form submit
-document.getElementById("flogin").addEventListener("submit", submitForm);
-// submit form
-function submitForm(e){
-    e.preventDefault();
-
-//values
-var email = getInputVal("ema");
-var pwd = getInputVal("password");
-
-
-//save data
-
-saveData(ema, password);
-} 
-
-//functions to get form values
-function getInputVal(id){
-    return document.getElementById(id).value;
-}
-
-//save data to firebase
- function saveData(ema, password){
-     var newSaveDataRef = saveData.push();
-     newSaveDataRef.set({
-         email: ema,
-         pwd: password
-     });
- }
+submit.addEventListener("click", function(e){
+    e.preventDefault(e);
+    rootRef.child(ema.value).set({
+        email: ema,
+        pwd: password
+    });
+    console.log("pwd");
+ });
