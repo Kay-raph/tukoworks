@@ -8,7 +8,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-	<script type="text/javascript" src="js/mdb.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
@@ -18,7 +17,7 @@
 	<link href="src/css/footer.css" rel="stylesheet" />
 	<title>CrimsonGroup</title>
 </head>
-<body>
+<body ng-app>
 	<div class="sdnav">
 		<span style="font-size: 35px;cursor:pointer;" onclick="openNav()"><b style="color: white; border-radius: 30%; padding: 2px; margin: auto; border: solid 2px white;" >&#9776; </b><img src="logos/cglogo2.png" alt="CrimsonGroup"></span>  
 		<div id="mySidenav" class="sidenav">
@@ -26,8 +25,7 @@
 		  <a href="findlogin.html" class="signin" ng-click="active='signin'"><i class="fa fa-fw fa-sign-in"></i>sign in</a>
 		  <a href="findsignup.html" class="signup" click="active current='signup'"><i class="fa fa-fw fa-user"></i>sign up</a>
 		  <a href="findprofile.html" id="about" class="about" ng-click="active='about'"><i class="fa fa-fw fa-info-circle"></i>About us</a>
-		  <a href="index.html" class="home" ng-click="active='home'"><i class="fa fa-fw fa-question-circle"></i>Why crimson</a>		
-		  <a href=""><img src="logos\crm1.png" alt="CrimsonGroup"></a>
+		  <a href="index.html" class="home" ng-click="active='home'"><i class="fa fa-fw fa-question-circle"></i>Why crimson</a>	
 		</div>
 	 <script>
 		 //SIDENAV//
@@ -66,9 +64,6 @@ function closeNav() {
 		</a>
 		<br><br>
 		<div class="fronta">
-			<!-- <center>
-<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_xsnsvpbs.json"  background="transparent"  speed="1"  style="width: 500px; height: 300px;"  loop  autoplay></lottie-player>
-</center>		 -->
 </div><br>
 <hr style="height:3px; border-width:0; color: #624cd5; background-color: #624cd5">
 		<br>
@@ -83,7 +78,7 @@ function closeNav() {
 				<div class="col-sm"><br>
 				  STEP 1.
 				  <br>
-				  <p style="text-transform: uppercase; color: black;">Login or Signup online.</p>
+				  <p style="text-transform: uppercase; color: black;">Login or Signup with us.</p>
 				  <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hsedfigg/data.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
 				</div>
 				<div class="col-sm"><br>
@@ -111,7 +106,7 @@ function closeNav() {
 		  
 		<div class="col-xs-12 col-sm-6 col-md-3">
 		<div class="widget subscribe no-box">
-		<img src="logos/crm2.png" style="width: 100px; height: auto;">
+		<a href="index.html"><img src="logos/crm2.png" style="width: 100px; height: auto;"></a>
 		<p>“Connect to talent and jobs anywhere anytime”</p>
 	</div>
 		</div>
@@ -180,7 +175,6 @@ function closeNav() {
 		</div>
 		</div>
 		</footer>
-</body>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	</body>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </html>
