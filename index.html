@@ -18,38 +18,54 @@
 	<title>CrimsonGroup</title>
 </head>
 <body ng-app>
-	<div class="sdnav">
-		<span style="font-size: 35px;cursor:pointer;" onclick="openNav()"><b style="color: white; border-radius: 30%; padding: 2px; margin: auto; border: solid 2px white;" >&#9776; </b><img src="logos/cglogo2.png" alt="CrimsonGroup"></span>  
-		<div id="mySidenav" class="sidenav">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <a href="findlogin.html" class="signin" ng-click="active='signin'"><i class="fa fa-fw fa-sign-in"></i>sign in</a>
-		  <a href="findsignup.html" class="signup" click="active current='signup'"><i class="fa fa-fw fa-user"></i>sign up</a>
-		  <a href="findprofile.html" id="about" class="about" ng-click="active='about'"><i class="fa fa-fw fa-info-circle"></i>About us</a>
-		  <a href="index.html" class="home" ng-click="active='home'"><i class="fa fa-fw fa-question-circle"></i>Why crimson</a>	
-		</div>
-	 <script>
-		 //SIDENAV//
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-	 </script>
-	</div>
-	<nav id="navbar">
-		<a href="findlogin.html" class="signin" click="active current='login'"><i class="fa fa-fw fa-sign-in"></i>sign in</a>
-		<a href="findsignup.html" class="signup" click="active current='signup'"><i class="fa fa-fw fa-user"></i>sign up</a>
-		<a href="findprofile.html" id="about" class="about" click="active current='about'"><i class="fa fa-fw fa-info-circle"></i>About us</a>
-		<a href="index.html" class="home" click="active current='home'"><i class="fa fa-fw fa-question-circle"></i>Why crimson</a>
-		<img src="logos\crm2.png" alt="CrimsonGroup">
-	</nav>
+	 <!-- NAVBAR STARTING -->
+    <!-- Use navbar class to the navbar logo  
+        to the far left of the screen-->
+		<nav class=" navbar navbar-expand-lg  
+        navbar py-lg-0 " style="position: scroll; background-color: #624cd5;"> 
+  
+        <a class="navbar-brand" id="logo" href="index.html"> 
+  
+            <!-- Add logo with size of 150*auto -->
+            <img src= 
+"./logos/crm8.png" alt="Tuko Works"> 
+        </a> 
+          
+        <button class="navbar-toggler navbar-light bg-light" type="button"
+                data-toggle="collapse" 
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" 
+				aria-expanded="false" 
+				color="white"
+                aria-label="Toggle navigation"> 
+                  
+                <span class="navbar-toggler-icon"></span> 
+        </button> 
+  
+        <div class="collapse navbar-collapse"
+                id="navbarResponsive"> 
+            <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item active"> 
+					<a href="findlogin.html" class="home" click="active current='findlogin'"><i class="fa fa-fw fa-question-circle"></i>Sign In</a>
+					<span class="sr-only">(current)</span>			   
+				</li> 
+                <li class="nav-item"> 
+                    <a href="findsignup.html" class="signup" click="active current='signup'"><i class="fa fa-fw fa-user"></i>sign up</a>
+                </li> 
+                <li class="nav-item"> 
+					<a href="findprofile.html" id="about" class="about" click="active current='about'"><i class="fa fa-fw fa-info-circle"></i>About us</a> 
+                </li> 
+                <li class="nav-item"> 
+					<a href="index.html" class="home" click="active current='home'"><i class="fa fa-fw fa-question-circle"></i>Our Policy</a> 
+                </li> 
+            </ul> 
+        </div> 
+    </nav> 
 	
 	<br><br>
 	<div class="container">
 		<div class="frontb">
-			<h1>“Connect to talent and jobs anywhere anytime”</h1>
+			<h1 style="color: #624cd5;">“Connect to talent and jobs anywhere anytime”</h1>
 		</div>
 		<br><br>
 		<a href="findlogin.html">
@@ -79,7 +95,7 @@ function closeNav() {
 				  STEP 1.
 				  <br>
 				  <p style="text-transform: uppercase; color: black;">Login or Signup with us.</p>
-				  <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hsedfigg/data.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+				  <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hsedfigg/data.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
 				</div>
 				<div class="col-sm"><br>
 				  STEP 2.
@@ -91,7 +107,7 @@ function closeNav() {
 				  STEP 3.
 				<br>
 				<p style="color: black; text-transform: uppercase;">Start Working at a Company.</p>
-                <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_gcroxmlt.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_gcroxmlt.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
 				</div>
 			  </div>
 			<br>
@@ -106,7 +122,7 @@ function closeNav() {
 		  
 		<div class="col-xs-12 col-sm-6 col-md-3">
 		<div class="widget subscribe no-box">
-		<a href="index.html"><img src="logos/crm2.png" style="width: 100px; height: auto;"></a>
+		<a href="index.html"><img src="logos/crm8.png" style="width: 100px; height: auto;"></a>
 		<p>“Connect to talent and jobs anywhere anytime”</p>
 	</div>
 		</div>

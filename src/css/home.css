@@ -7,91 +7,28 @@ html{
 	letter-spacing: 2px;
 	scroll-behavior: smooth;
 }
-
-nav a:hover{
-	text-decoration:none;
+#navbarResponsive a:hover{
 	color: #ea9c14;
-	transition: 0.5s;
+	transition: ease-in-out 0.4s;
+}
+#navbarResponsive a{
+margin: 30px;
+color: white;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+transition: ease-in-out 0.4s;
 }
 
-nav{
-	position: relative;
-	display:inline-block;
-	background-color: #624cd5;
-	width: 100%;
-	top: 0;
-	margin: 0;
-	position: scroll;
-}
-
-nav a{
-	float: right;
-	margin-top: 15px;
-	margin-right: 50px;
-	padding: 40px;
-	color: white;
-	font-weight: 800;
-	font-size: 20px;
-	text-decoration:none;
-	line-height:1;
-	text-transform: uppercase;
-}
-nav img{
+nav #logo img{
 	width: 150px;
 	height: auto;
-	margin-top: -10px;
-	margin-left: 20px;
-	padding: 0px;
 }
-h1{
-	color: #624cd5;
-	font-weight: bold;
-	text-align: center;
-}
-.sdnav{
-    display: none;
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #624cd5;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 12px 12px 12px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    float: left;
-    color: #ffffff;
-    display: block;
-	transition: 0.5s;
-	font-weight: bold;
-}
-
-.sidenav a:hover {
-    color: #000;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-	margin-left: 50px;
+span .navbar-toggler-icon{
 	color: white;
+	z-index: 1;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 15px;}
-}
 .fronta{
 	width: 100%;
 	margin: auto;
@@ -117,6 +54,7 @@ h1{
 	width: 20%;
 	margin-left: 20%;
 	transition: all 0.6s;
+	text-decoration: none;
 }
 .post{
 	background-color: #624cd5;
@@ -132,10 +70,12 @@ h1{
 .find:hover{
 	background-color: #ea9c14;
 	transition: 0.6s;
+	text-decoration: none;
 }
 .post:hover{
 	background-color: #ea9c14;
 	transition: 0.6s;
+	text-decoration: none;
 }
 #p1, #p2{
 font-size: 20px;
@@ -143,6 +83,7 @@ color: white;
 margin: 20px;
 font-weight: 800;
 text-align: center;
+text-decoration: none;
 }
 .find #p1:hover{
 	text-decoration: none;
@@ -186,15 +127,14 @@ h5{
 }
 /*hamburger menu*/
 
-/* ----------- iPhone 4 and 4S ----------- */
+/* ----------- Apple watch ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (min-device-width: 272px) 
+  and (max-device-width: 340px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	nav{
-		display: none;
 		position: relative;
 		display:inline-block;
 		background-color: #624cd5;
@@ -203,56 +143,120 @@ h5{
 		margin: 0;
 		position: scroll;
 	}
-	nav a{
-		margin: 1px;
+	#navbarResponsive a{
+		margin: 30px;
 		color: white;
-		font-weight: normal;
-		font-size: 6px;
-		text-decoration:none;
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: ease-in-out 0.4s;
+		}
+		
+		nav #logo img{
+			width: 80px;
+			height: auto;
+		}
+	
+	.fronta{
+		width: 100%;
+		margin: auto;
+		background-image: url("../imgs/hire1.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 120% 120%;
+		height: 200px;
+	  }
+	.frontb p{
+		text-align: center;
+		color: rgb(98, 76, 213);
+		font-size: 18px;
+		font-weight: 800;
+	}
+	.find{
+		background-color: #624cd5;
+		border-radius: 10px;
+		outline: none;
+		display: block;
+		width: 50%;
+		margin: auto;
+		transition: all 0.6s;
+	}
+	.post{
+		background-color: #624cd5;
+		border-radius: 10px;
+		outline: none;
+		display: block;
+		width: 50%;
+		margin: auto;
+		transition: all 0.6s;
+	}
+	.find:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	.post:hover{
+		background-color: #ea9c14;
+		transition: 0.6s;
+	}
+	#p1, #p2{
+	font-size: 20px;
+	color: white;
+	margin: 20px;
+	font-weight: 600;
+	text-align: center;
+	}
+	#p1:hover{
+		text-decoration: none;
+	}
+	#p2:hover{
+		text-decoration: none;
+	}
+	h5{
+		background-color: #624cd5;
+		color: white;
+		border-radius: 15px;
+		padding: 10px;
+		width: 90%;
+		font-size: 10px;
+		font-weight: bolder;
+	}
+	lottie-player{
+		width: 200px;
+		height: 200px;
 	}
 
-	.sdnav{
-		display: none;
+}
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	nav{
+		position: relative;
+		display:inline-block;
 		background-color: #624cd5;
-    }
-    .sidenav {
-		display: none;
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #624cd5;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        display: block;
-    }
-    .sdnav img{
-		margin-left: -10px;
-		height: auto;
-		width: 100px;
-		margin-top: -5px;
+		width: 100%;
+		top: 0;
+		margin: 0;
+		position: scroll;
 	}
-    .sidenav a {
-        padding: 18px 18px 18px 42px;
-        text-decoration: none;
-        font-size: 19px;
-        float: left;
-        color: #ffffff;
-        display: block;
-        transition: 0.5s;
-        margin: 15px 0;
-        overflow: hidden;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 30px;
-        margin-left: 20px;
-    }
+	#navbarResponsive a{
+		margin: 30px;
+		color: white;
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: ease-in-out 0.4s;
+		}
+		
+		nav #logo img{
+			width: 80px;
+			height: auto;
+		}
+	
 	.fronta{
 		width: 100%;
 		margin: auto;
@@ -335,65 +339,20 @@ h5{
 		margin: 0;
 		position: scroll;
 	}
-	nav a{
-		display: none;
-		margin: 1px;
+	#navbarResponsive a{
+		margin: 30px;
 		color: white;
-		font-weight: normal;
-		font-size: 6px;
-		text-decoration:none;
-	}
-	nav img{
-		display: none;
-		max-width: 20%;
-		height: auto;
-		margin-top: 0px;
-		margin-left: -15px;
-		padding: 10px;
-	}
-	.sdnav{
-		display: block;
-		background-color: #624cd5;
-    }
-    .sdnav img{
-        margin-left: 180px;
-        height: 50px;
-        width: 100px;
-		margin-top: -10px;
-		display: none;
-    }
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #624cd5;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        display: block;
-    }
-    
-    .sidenav a {
-        padding: 18px 18px 18px 42px;
-        text-decoration: none;
-        font-size: 19px;
-        float: left;
-        color: #ffffff;
-        display: block;
-        transition: 0.5s;
-        margin: 15px 0;
-        overflow: hidden;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 30px;
-        margin-left: 20px;
-    }
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: ease-in-out 0.4s;
+		}
+		
+		nav #logo img{
+			width: 30px;
+			height: auto;
+		}
+	
 	.fronta{
 		width: 100%;
 		margin: auto;
@@ -467,7 +426,6 @@ h5{
   and (max-device-width: 576px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	nav{
-		display: none;
 		position: relative;
 		display:inline-block;
 		background-color: #624cd5;
@@ -476,64 +434,20 @@ h5{
 		margin: 0;
 		position: scroll;
 	}
-	nav a{
-		display: none;
-		margin: 1px;
+	#navbarResponsive a{
+		margin: 30px;
 		color: white;
-		font-weight: normal;
-		font-size: 6px;
-		text-decoration:none;
-	}
-	nav img{
-		display: none;
-		max-width: 20%;
-		height: auto;
-		margin-top: 0px;
-		margin-left: -15px;
-		padding: 10px;
-	}
-	.sdnav{
-		padding: 5px;
-		display: block;
-		background-color: #624cd5;
-    }
-    .sidenav a img{
-        height: 50px;
-		width: 100px;
-		display: none;	
-    }
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #624cd5;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        display: block;
-    }
-    
-    .sidenav a {
-        padding: 18px 18px 18px 42px;
-        text-decoration: none;
-        font-size: 19px;
-        float: left;
-        color: #ffffff;
-        display: block;
-        transition: 0.5s;
-        margin: 15px 0;
-		overflow: hidden;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 30px;
-        margin-left: 20px;
-    }
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: ease-in-out 0.4s;
+		}
+		
+		nav #logo img{
+			width: 100px;
+			height: auto;
+		}
+	
 	.fronta{
 		width: 100%;
 		margin: auto;
@@ -608,7 +522,6 @@ h5{
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 	nav{
-		display: none;
 		position: relative;
 		display:inline-block;
 		background-color: #624cd5;
@@ -617,65 +530,20 @@ h5{
 		margin: 0;
 		position: scroll;
 	}
-	nav a{
-		display: none;
-		margin: 1px;
+	#navbarResponsive a{
+		margin: 30px;
 		color: white;
-		font-weight: normal;
-		font-size: 6px;
-		text-decoration:none;
-	}
-	nav img{
-		display: none;
-		max-width: 20%;
-		height: auto;
-		margin-top: 0px;
-		margin-left: -15px;
-		padding: 10px;
-	}
-	.sdnav{
-		display: block;
-		background-color: #624cd5;
-    }
-    .sdnav img{
-        margin-left: 180px;
-        height: 50px;
-        width: 100px;
-		margin-top: -10px;
-		display: none;
-    }
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #624cd5;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        display: block;
-    }
-    
-    .sidenav a {
-        padding: 18px 18px 18px 42px;
-        text-decoration: none;
-        font-size: 19px;
-        float: left;
-        color: #ffffff;
-        display: block;
-        transition: 0.5s;
-        margin: 15px 0;
-        overflow: hidden;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 30px;
-        margin-left: 20px;
-    }
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: ease-in-out 0.4s;
+		}
+		
+		nav #logo img{
+			width: 100px;
+			height: auto;
+		}
+	
 	.fronta{
 		width: 100%;
 		margin: auto;
@@ -740,7 +608,6 @@ h5{
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
 	nav{
-		display: none;
 		position: relative;
 		display:inline-block;
 		background-color: #624cd5;
@@ -749,65 +616,20 @@ h5{
 		margin: 0;
 		position: scroll;
 	}
-	nav a{
-		display: none;
-		margin: 1px;
+	#navbarResponsive a{
+		margin: 30px;
 		color: white;
-		font-weight: normal;
-		font-size: 6px;
-		text-decoration:none;
-	}
-	nav img{
-		display: none;
-		max-width: 20%;
-		height: auto;
-		margin-top: 0px;
-		margin-left: -15px;
-		padding: 10px;
-	}
-	.sdnav{
-		display: block;
-		background-color: #624cd5;
-    }
-    .sdnav img{
-        margin-left: 180px;
-        height: 50px;
-        width: 100px;
-		margin-top: -10px;
-		display: none;
-    }
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #624cd5;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        display: block;
-    }
-    
-    .sidenav a {
-        padding: 18px 18px 18px 42px;
-        text-decoration: none;
-        font-size: 19px;
-        float: left;
-        color: #ffffff;
-        display: block;
-        transition: 0.5s;
-        margin: 15px 0;
-        overflow: hidden;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 30px;
-        margin-left: 20px;
-    }
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: ease-in-out 0.4s;
+		}
+		
+		nav #logo img{
+			width: 100px;
+			height: auto;
+		}
+	
 	.fronta{
 		width: 100%;
 		margin: auto;
@@ -872,7 +694,6 @@ h5{
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
 	nav{
-		display: none;
 		position: relative;
 		display:inline-block;
 		background-color: #624cd5;
@@ -881,65 +702,20 @@ h5{
 		margin: 0;
 		position: scroll;
 	}
-	nav a{
-		display: none;
-		margin: 1px;
+	#navbarResponsive a{
+		margin: 30px;
 		color: white;
-		font-weight: normal;
-		font-size: 6px;
-		text-decoration:none;
-	}
-	nav img{
-		display: none;
-		max-width: 20%;
-		height: auto;
-		margin-top: 0px;
-		margin-left: -15px;
-		padding: 10px;
-	}
-	.sdnav{
-		display: block;
-		background-color: #624cd5;
-    }
-    .sdnav img{
-        margin-left: 180px;
-        height: 50px;
-        width: 100px;
-		margin-top: -10px;
-		display: none;
-    }
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #624cd5;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        display: block;
-    }
-    
-    .sidenav a {
-        padding: 18px 18px 18px 42px;
-        text-decoration: none;
-        font-size: 19px;
-        float: left;
-        color: #ffffff;
-        display: block;
-        transition: 0.5s;
-        margin: 15px 0;
-        overflow: hidden;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 30px;
-        margin-left: 20px;
-    }
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: ease-in-out 0.4s;
+		}
+		
+		nav #logo img{
+			width: 120px;
+			height: auto;
+		}
+	
 	.fronta{
 		width: 100%;
 		margin: auto;
@@ -1013,10 +789,10 @@ h5{
 		scroll-behavior: smooth;
 	}
 	
-	nav a:hover{
+	#navbarResponsive a:hover{
 		text-decoration:none;
 		color: #ea9c14;
-		transition: 0.5s;
+		transition: 0.4s;
 	}
 	
 	nav{
@@ -1028,74 +804,20 @@ h5{
 		margin: 0;
 		position: scroll;
 	}
-	
-	nav a{
-		float: right;
-		margin: 0px;
-		margin-right: 50px;
-		padding: 1px;
-		margin-top: 40px;
+	#navbarResponsive a{
+		margin: 30px;
 		color: white;
+		font-size: 20px;
 		font-weight: bold;
-		font-size: 13px;
-		text-decoration:none;
-		text-transform: uppercase;
-	}
-	nav img{
-		width: 100px;
-		height: auto;
-		margin-top: 0px;
-		margin-left: 10px;
-		padding: 5px;
-	}
-	.sdnav{
-		display: none;
-	}
-	.sdnav img{
-		margin-left: 1080px;
-		height: 50px;
-		width: 100px;
-		margin-top: -50px;
-	}
-	.sidenav {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		background-color: #624cd5;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-	
-	.sidenav a {
-		padding: 12px 12px 12px 32px;
 		text-decoration: none;
-		font-size: 25px;
-		float: left;
-		color: #ffffff;
-		display: block;
-		transition: 0.5s;
-	}
+		transition: ease-in-out 0.4s;
+		}
+		
+		nav #logo img{
+			width: 120px;
+			height: auto;
+		}
 	
-	.sidenav a:hover {
-		color: #000;
-	}
-	
-	.sidenav .closebtn {
-		position: absolute;
-		top: 0;
-		right: 25px;
-		font-size: 36px;
-		margin-left: 50px;
-	}
-	
-	@media screen and (max-height: 450px) {
-	  .sidenav {padding-top: 15px;}
-	  .sidenav a {font-size: 15px;}
-	}
 	.fronta{
 		width: 100%;
 		margin: auto;
@@ -1192,75 +914,20 @@ h5{
 		margin: 0;
 		position: scroll;
 	}
-	
-	nav a{
-		float: right;
-		margin: 1px;
-		margin-right: 50px;
-		padding: 1px;
-		margin-top: 70px;
+	#navbarResponsive a{
+		margin: 30px;
 		color: white;
-		font-weight: 800;
-		font-size: 22px;
-		text-decoration:none;
-		line-height:1;
-		text-transform: uppercase;
-	}
-	nav img{
-		width: 180px;
-		height: auto;
-		margin-top: 0px;
-		margin-left: 20px;
-		padding: 5px;
-	}
-	.sdnav{
-		display: none;
-	}
-	.sdnav img{
-		margin-left: 1080px;
-		height: 50px;
-		width: 100px;
-		margin-top: -50px;
-	}
-	.sidenav {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		background-color: #624cd5;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-	
-	.sidenav a {
-		padding: 12px 12px 12px 32px;
+		font-size: 20px;
+		font-weight: bold;
 		text-decoration: none;
-		font-size: 25px;
-		float: left;
-		color: #ffffff;
-		display: block;
-		transition: 0.5s;
-	}
+		transition: ease-in-out 0.4s;
+		}
+		
+		nav #logo img{
+			width: 120px;
+			height: auto;
+		}
 	
-	.sidenav a:hover {
-		color: #000;
-	}
-	
-	.sidenav .closebtn {
-		position: absolute;
-		top: 0;
-		right: 25px;
-		font-size: 36px;
-		margin-left: 50px;
-	}
-	
-	@media screen and (max-height: 450px) {
-	  .sidenav {padding-top: 15px;}
-	  .sidenav a {font-size: 15px;}
-	}
 	.fronta{
 		width: 100%;
 		margin: auto;
