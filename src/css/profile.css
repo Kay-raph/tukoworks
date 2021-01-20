@@ -1,0 +1,2010 @@
+body,
+html{
+    margin:0;
+	padding:0;
+	background-color: white;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	scroll-behavior: smooth;
+}
+.container{
+    margin: 20px;
+}
+h1,p{
+    color: #624cd5;
+    font-weight: 600;
+    text-align: justify;
+}
+.col-md-2 #p1{
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    height: 500px;
+    margin: 50px;
+}
+.col-md-1 {
+    float: left;
+    width: 50%;
+  }
+  .col-md-2{
+    float: right;
+    width: 50%;
+  }
+  .col-md-2 a{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .col-md-2 p{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .col-md-2 p:hover{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .col-md-2 a:hover{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .col-md-1{
+
+  }
+  .col-md-2{
+    float: right;
+  }
+label #res {
+  margin: 20px;
+    background-color: #624cd5;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+ul.ks-cboxtags {
+    list-style: none;
+    padding: 2px;
+}
+ul.ks-cboxtags li{
+  display: inline;
+}
+ul.ks-cboxtags li label{
+    display: inline-block;
+    background-color: white;
+    border: 2px solid #624cd5;
+    color: #624cd5;
+    border-radius: 10px;
+    white-space: nowrap;
+    margin: 5px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 2px solid #624cd5;
+    background-color: #ea9c14;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+  border: 2px solid #624cd5;
+}
+.custom-file-upload {
+    border: 2px solid #624cd5;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 6px 6px;
+    cursor: pointer;
+  }
+
+  lottie-player{
+    margin: auto;
+  }
+    /* ----------- Apple Watch ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 272px) 
+and (max-device-width: 340px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  lottie-player{
+		width: 200px;
+    height: 200px;
+  }
+  .container{
+    margin: 10px;
+  }
+  h1,p{
+    color: #624cd5;
+    font-weight: 600;
+    text-align: justify;
+  }
+  p{
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  }
+  .col-md-2 #p1{
+    font-size: 15px;
+    text-align: justify;
+  }
+  .row{
+    display: block;
+  }
+  .col-md-1 {
+    width: 100%;
+  }
+  .col-md-2{
+    width: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .col-md-1{
+    display: block;
+  }
+  .col-md-2{
+    display: block;
+  }
+  .col-md-2 a{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .col-md-2 p{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .col-md-2 p:hover{
+    text-decoration: none;
+    transition: all .4s;
+    
+  }
+  .col-md-2 a:hover{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  label #res {
+      background-color: #624cd5;
+      color: white;
+      padding: 0.5rem;
+      font-family: sans-serif;
+      border-radius: 0.1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+  }
+  ul.ks-cboxtags {
+      list-style: none;
+      padding: 2px;
+  }
+  ul.ks-cboxtags li{
+    display: inline;
+  }
+  ul.ks-cboxtags li label{
+      display: inline-block;
+      background-color: white;
+      border: 2px solid #624cd5;
+      color: #624cd5;
+      border-radius: 10px;
+      white-space: nowrap;
+      margin: 5px 0px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: all .2s;
+  }
+  
+  ul.ks-cboxtags li label {
+      padding: 4px 6px;
+      cursor: pointer;
+  }
+  
+  ul.ks-cboxtags li label::before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 12px;
+      padding: 2px 6px 2px 2px;
+      content: "\f067";
+      transition: transform .3s ease-in-out;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+      content: "\f00c";
+      transform: rotate(-360deg);
+      transition: transform .3s ease-in-out;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+      border: 2px solid #624cd5;
+      background-color: #ea9c14;
+      color: #fff;
+      transition: all .2s;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"] {
+    display: absolute;
+  }
+  ul.ks-cboxtags li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+  ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+    border: 2px solid #624cd5;
+  }
+  .custom-file-upload {
+      border: 2px solid #624cd5;
+      border-radius: 10px;
+      display: inline-block;
+      padding: 2px 2px;
+      cursor: pointer;
+    }
+  
+}
+  /* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  body,
+html{
+    margin:0;
+	padding:0;
+	background-color: white;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	scroll-behavior: smooth;
+}
+.container{
+  margin: 10px;
+}
+h1,p{
+  color: #624cd5;
+  font-weight: 600;
+  text-align: justify;
+}
+p{
+font-size: 14px;
+padding: 5px;
+margin: 5px;
+}
+.col-md-2 #p1{
+  font-size: 15px;
+  text-align: justify;
+}
+.row{
+  display: block;
+}
+.col-md-1 {
+  width: 100%;
+}
+.col-md-2{
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col-md-1{
+  display: block;
+}
+.col-md-2{
+  display: block;
+}
+.col-md-2 a{
+  text-decoration: none;
+  transition: all .4s;
+}
+.col-md-2 p{
+  text-decoration: none;
+  transition: all .4s;
+}
+.col-md-2 p:hover{
+  text-decoration: none;
+  transition: all .4s;
+  
+}
+.col-md-2 a:hover{
+  text-decoration: none;
+  transition: all .4s;
+}
+label #res {
+    background-color: #624cd5;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+ul.ks-cboxtags {
+    list-style: none;
+    padding: 2px;
+}
+ul.ks-cboxtags li{
+  display: inline;
+}
+ul.ks-cboxtags li label{
+    display: inline-block;
+    background-color: white;
+    border: 2px solid #624cd5;
+    color: #624cd5;
+    border-radius: 10px;
+    white-space: nowrap;
+    margin: 5px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 2px solid #624cd5;
+    background-color: #ea9c14;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+  border: 2px solid #624cd5;
+}
+.custom-file-upload {
+    border: 2px solid #624cd5;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 2px 2px;
+    cursor: pointer;
+  }
+  
+  lottie-player{
+    height: auto;
+    width: 300px;
+    margin: auto;  
+  }
+}
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body,
+    html{
+        margin:0;
+      padding:0;
+      background-color: white;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      scroll-behavior: smooth;
+    }
+    .container{
+      margin: 10px;
+    }
+    h1,p{
+      color: #624cd5;
+      font-weight: 600;
+      text-align: justify;
+    }
+    p{
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+    }
+    .col-md-2 #p1{
+      font-size: 15px;
+      text-align: justify;
+    }
+    .row{
+      display: block;
+    }
+    .col-md-1 {
+      width: 100%;
+    }
+    .col-md-2{
+      width: 100%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .col-md-1{
+      display: block;
+    }
+    .col-md-2{
+      display: block;
+    }
+    .col-md-2 a{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p:hover{
+      text-decoration: none;
+      transition: all .4s;
+      
+    }
+    .col-md-2 a:hover{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    label #res {
+        background-color: #624cd5;
+        color: white;
+        padding: 0.5rem;
+        font-family: sans-serif;
+        border-radius: 0.1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    ul.ks-cboxtags {
+        list-style: none;
+        padding: 2px;
+    }
+    ul.ks-cboxtags li{
+      display: inline;
+    }
+    ul.ks-cboxtags li label{
+        display: inline-block;
+        background-color: white;
+        border: 2px solid #624cd5;
+        color: #624cd5;
+        border-radius: 10px;
+        white-space: nowrap;
+        margin: 2px 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li label {
+        padding: 4px 6px;
+        cursor: pointer;
+    }
+    
+    ul.ks-cboxtags li label::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 8px;
+        padding: 2px 4px 2px 2px;
+        content: "\f067";
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+        content: "\f00c";
+        transform: rotate(-360deg);
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+        border: 2px solid #624cd5;
+        background-color: #ea9c14;
+        color: #fff;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"] {
+      display: absolute;
+    }
+    ul.ks-cboxtags li input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+    }
+    ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+      border: 2px solid #624cd5;
+    }
+    .custom-file-upload {
+        border: 2px solid #624cd5;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 2px 2px;
+        cursor: pointer;
+      }
+      button{
+        background-color: #624cd5;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      button:hover{
+        background-color: #ea9c14;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      lottie-player{
+        height: auto;
+        width: 250px;
+        margin: auto;  
+      }
+    }
+/* ----------- Android ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 576px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    body,
+    html{
+        margin:0;
+      padding:0;
+      background-color: white;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      scroll-behavior: smooth;
+    }
+    .container{
+      margin: 10px;
+    }
+    h1,p{
+      color: #624cd5;
+      font-weight: 600;
+      text-align: justify;
+    }
+    p{
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+    }
+    .col-md-2 #p1{
+      font-size: 15px;
+      text-align: justify;
+    }
+    .row{
+      display: block;
+    }
+    .col-md-1 {
+      width: 100%;
+    }
+    .col-md-2{
+      width: 100%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .col-md-1{
+      display: block;
+    }
+    .col-md-2{
+      display: block;
+    }
+    .col-md-2 a{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p:hover{
+      text-decoration: none;
+      transition: all .4s;
+      
+    }
+    .col-md-2 a:hover{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    label #res {
+        background-color: #624cd5;
+        color: white;
+        padding: 0.5rem;
+        font-family: sans-serif;
+        border-radius: 0.1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    ul.ks-cboxtags {
+        list-style: none;
+        padding: 2px;
+    }
+    ul.ks-cboxtags li{
+      display: inline;
+    }
+    ul.ks-cboxtags li label{
+        display: inline-block;
+        background-color: white;
+        border: 2px solid #624cd5;
+        color: #624cd5;
+        border-radius: 10px;
+        white-space: nowrap;
+        margin: 2px 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li label {
+        padding: 4px 6px;
+        cursor: pointer;
+    }
+    
+    ul.ks-cboxtags li label::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 8px;
+        padding: 2px 4px 2px 2px;
+        content: "\f067";
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+        content: "\f00c";
+        transform: rotate(-360deg);
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+        border: 2px solid #624cd5;
+        background-color: #ea9c14;
+        color: #fff;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"] {
+      display: absolute;
+    }
+    ul.ks-cboxtags li input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+    }
+    ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+      border: 2px solid #624cd5;
+    }
+    .custom-file-upload {
+        border: 2px solid #624cd5;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 2px 2px;
+        cursor: pointer;
+      }
+      button{
+        background-color: #624cd5;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      button:hover{
+        background-color: #ea9c14;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      lottie-player{
+        height: auto;
+        width: 250px;
+        margin: auto;  
+      }
+    }
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    body,
+    html{
+        margin:0;
+      padding:0;
+      background-color: white;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      scroll-behavior: smooth;
+    }
+    .container{
+      margin: 10px;
+    }
+    h1,p{
+      color: #624cd5;
+      font-weight: 600;
+      text-align: justify;
+    }
+    p{
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+    }
+    .col-md-2 #p1{
+      font-size: 15px;
+      text-align: justify;
+    }
+    .row{
+      display: block;
+    }
+    .col-md-1 {
+      width: 100%;
+    }
+    .col-md-2{
+      width: 100%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .col-md-1{
+      display: block;
+    }
+    .col-md-2{
+      display: block;
+    }
+    .col-md-2 a{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p:hover{
+      text-decoration: none;
+      transition: all .4s;
+      
+    }
+    .col-md-2 a:hover{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    label #res {
+        background-color: #624cd5;
+        color: white;
+        padding: 0.5rem;
+        font-family: sans-serif;
+        border-radius: 0.1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    ul.ks-cboxtags {
+        list-style: none;
+        padding: 2px;
+    }
+    ul.ks-cboxtags li{
+      display: inline;
+    }
+    ul.ks-cboxtags li label{
+        display: inline-block;
+        background-color: white;
+        border: 2px solid #624cd5;
+        color: #624cd5;
+        border-radius: 10px;
+        white-space: nowrap;
+        margin: 2px 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li label {
+        padding: 4px 6px;
+        cursor: pointer;
+    }
+    
+    ul.ks-cboxtags li label::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 8px;
+        padding: 2px 4px 2px 2px;
+        content: "\f067";
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+        content: "\f00c";
+        transform: rotate(-360deg);
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+        border: 2px solid #624cd5;
+        background-color: #ea9c14;
+        color: #fff;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"] {
+      display: absolute;
+    }
+    ul.ks-cboxtags li input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+    }
+    ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+      border: 2px solid #624cd5;
+    }
+    .custom-file-upload {
+        border: 2px solid #624cd5;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 2px 2px;
+        cursor: pointer;
+      }
+      button{
+        background-color: #624cd5;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      button:hover{
+        background-color: #ea9c14;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      lottie-player{
+        height: auto;
+        width: 250px;
+        margin: auto;  
+      }
+    }
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+  body,
+  html{
+      margin:0;
+    padding:0;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+  }
+  .container{
+    margin: 10px;
+  }
+  h1,p{
+    color: #624cd5;
+    font-weight: 600;
+    text-align: justify;
+  }
+  p{
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  }
+  .col-md-2 #p1{
+    font-size: 15px;
+    text-align: justify;
+  }
+  .row{
+    display: block;
+  }
+  .col-md-1 {
+    width: 100%;
+  }
+  .col-md-2{
+    width: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .col-md-1{
+    display: block;
+  }
+  .col-md-2{
+    display: block;
+  }
+  .col-md-2 a{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .col-md-2 p{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .col-md-2 p:hover{
+    text-decoration: none;
+    transition: all .4s;
+    
+  }
+  .col-md-2 a:hover{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  label #res {
+      background-color: #624cd5;
+      color: white;
+      padding: 0.5rem;
+      font-family: sans-serif;
+      border-radius: 0.1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+  }
+  ul.ks-cboxtags {
+      list-style: none;
+      padding: 2px;
+  }
+  ul.ks-cboxtags li{
+    display: inline;
+  }
+  ul.ks-cboxtags li label{
+      display: inline-block;
+      background-color: white;
+      border: 2px solid #624cd5;
+      color: #624cd5;
+      border-radius: 10px;
+      white-space: nowrap;
+      margin: 2px 0px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: all .2s;
+  }
+  
+  ul.ks-cboxtags li label {
+      padding: 4px 6px;
+      cursor: pointer;
+  }
+  
+  ul.ks-cboxtags li label::before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 8px;
+      padding: 2px 4px 2px 2px;
+      content: "\f067";
+      transition: transform .3s ease-in-out;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+      content: "\f00c";
+      transform: rotate(-360deg);
+      transition: transform .3s ease-in-out;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+      border: 2px solid #624cd5;
+      background-color: #ea9c14;
+      color: #fff;
+      transition: all .2s;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"] {
+    display: absolute;
+  }
+  ul.ks-cboxtags li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+  ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+    border: 2px solid #624cd5;
+  }
+  .custom-file-upload {
+      border: 2px solid #624cd5;
+      border-radius: 10px;
+      display: inline-block;
+      padding: 2px 2px;
+      cursor: pointer;
+    }
+    button{
+      background-color: #624cd5;
+      color: white;
+      padding: 5px;
+      border-radius: 10px;
+      transition: all 0.4s;
+      outline: none;
+    }
+    button:hover{
+      background-color: #ea9c14;
+      color: white;
+      padding: 5px;
+      border-radius: 10px;
+      transition: all 0.4s;
+      outline: none;
+    }
+    lottie-player{
+      height: auto;
+      width: 350px;
+      margin: auto;  
+    }
+}
+/* ----------- Pixel 2 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 411px) 
+  and (max-device-width: 731px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body,
+    html{
+        margin:0;
+      padding:0;
+      background-color: white;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      scroll-behavior: smooth;
+    }
+    .container{
+      margin: 10px;
+    }
+    h1,p{
+      color: #624cd5;
+      font-weight: 600;
+      text-align: justify;
+    }
+    p{
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+    }
+    .col-md-2 #p1{
+      font-size: 15px;
+      text-align: justify;
+    }
+    .row{
+      display: block;
+    }
+    .col-md-1 {
+      width: 100%;
+    }
+    .col-md-2{
+      width: 100%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .col-md-1{
+      display: block;
+    }
+    .col-md-2{
+      display: block;
+    }
+    .col-md-2 a{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p:hover{
+      text-decoration: none;
+      transition: all .4s;
+      
+    }
+    .col-md-2 a:hover{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    label #res {
+        background-color: #624cd5;
+        color: white;
+        padding: 0.5rem;
+        font-family: sans-serif;
+        border-radius: 0.1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    ul.ks-cboxtags {
+        list-style: none;
+        padding: 2px;
+    }
+    ul.ks-cboxtags li{
+      display: inline;
+    }
+    ul.ks-cboxtags li label{
+        display: inline-block;
+        background-color: white;
+        border: 2px solid #624cd5;
+        color: #624cd5;
+        border-radius: 10px;
+        white-space: nowrap;
+        margin: 2px 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li label {
+        padding: 4px 6px;
+        cursor: pointer;
+    }
+    
+    ul.ks-cboxtags li label::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 8px;
+        padding: 2px 4px 2px 2px;
+        content: "\f067";
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+        content: "\f00c";
+        transform: rotate(-360deg);
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+        border: 2px solid #624cd5;
+        background-color: #ea9c14;
+        color: #fff;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"] {
+      display: absolute;
+    }
+    ul.ks-cboxtags li input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+    }
+    ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+      border: 2px solid #624cd5;
+    }
+    .custom-file-upload {
+        border: 2px solid #624cd5;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 2px 2px;
+        cursor: pointer;
+      }
+      button{
+        background-color: #624cd5;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      button:hover{
+        background-color: #ea9c14;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      lottie-player{
+        height: auto;
+        width: 350px;
+        margin: auto;  
+      }
+}
+/* ----------- Pixel 2 xl----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 411px) 
+  and (max-device-width: 823px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body,
+    html{
+        margin:0;
+      padding:0;
+      background-color: white;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      scroll-behavior: smooth;
+    }
+    .container{
+      margin: 10px;
+    }
+    h1,p{
+      color: #624cd5;
+      font-weight: 600;
+      text-align: justify;
+    }
+    p{
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+    }
+    .col-md-2 #p1{
+      font-size: 15px;
+      text-align: justify;
+    }
+    .row{
+      display: block;
+    }
+    .col-md-1 {
+      width: 100%;
+    }
+    .col-md-2{
+      width: 100%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .col-md-1{
+      display: block;
+    }
+    .col-md-2{
+      display: block;
+    }
+    .col-md-2 a{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p:hover{
+      text-decoration: none;
+      transition: all .4s;
+      
+    }
+    .col-md-2 a:hover{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    label #res {
+        background-color: #624cd5;
+        color: white;
+        padding: 0.5rem;
+        font-family: sans-serif;
+        border-radius: 0.1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    ul.ks-cboxtags {
+        list-style: none;
+        padding: 2px;
+    }
+    ul.ks-cboxtags li{
+      display: inline;
+    }
+    ul.ks-cboxtags li label{
+        display: inline-block;
+        background-color: white;
+        border: 2px solid #624cd5;
+        color: #624cd5;
+        border-radius: 10px;
+        white-space: nowrap;
+        margin: 2px 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li label {
+        padding: 4px 6px;
+        cursor: pointer;
+    }
+    
+    ul.ks-cboxtags li label::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 8px;
+        padding: 2px 4px 2px 2px;
+        content: "\f067";
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+        content: "\f00c";
+        transform: rotate(-360deg);
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+        border: 2px solid #624cd5;
+        background-color: #ea9c14;
+        color: #fff;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"] {
+      display: absolute;
+    }
+    ul.ks-cboxtags li input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+    }
+    ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+      border: 2px solid #624cd5;
+    }
+    .custom-file-upload {
+        border: 2px solid #624cd5;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 2px 2px;
+        cursor: pointer;
+      }
+      button{
+        background-color: #624cd5;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      button:hover{
+        background-color: #ea9c14;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      lottie-player{
+        height: auto;
+        width: 350px;
+        margin: auto;  
+      }
+}
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    body,
+    html{
+        margin:0;
+      padding:0;
+      background-color: white;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      scroll-behavior: smooth;
+    }
+    .container{
+      margin: 10px;
+    }
+    h1,p{
+      color: #624cd5;
+      font-weight: 600;
+      text-align: justify;
+    }
+    p{
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+    }
+    .col-md-2 #p1{
+      font-size: 15px;
+      text-align: justify;
+    }
+    .row{
+      display: block;
+    }
+    .col-md-1 {
+      width: 100%;
+    }
+    .col-md-2{
+      width: 100%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .col-md-1{
+      display: block;
+    }
+    .col-md-2{
+      display: block;
+    }
+    .col-md-2 a{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    .col-md-2 p:hover{
+      text-decoration: none;
+      transition: all .4s;
+      
+    }
+    .col-md-2 a:hover{
+      text-decoration: none;
+      transition: all .4s;
+    }
+    label #res {
+        background-color: #624cd5;
+        color: white;
+        padding: 0.5rem;
+        font-family: sans-serif;
+        border-radius: 0.1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    ul.ks-cboxtags {
+        list-style: none;
+        padding: 2px;
+    }
+    ul.ks-cboxtags li{
+      display: inline;
+    }
+    ul.ks-cboxtags li label{
+        display: inline-block;
+        background-color: white;
+        border: 2px solid #624cd5;
+        color: #624cd5;
+        border-radius: 10px;
+        white-space: nowrap;
+        margin: 2px 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li label {
+        padding: 4px 6px;
+        cursor: pointer;
+    }
+    
+    ul.ks-cboxtags li label::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 8px;
+        padding: 2px 4px 2px 2px;
+        content: "\f067";
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+        content: "\f00c";
+        transform: rotate(-360deg);
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+        border: 2px solid #624cd5;
+        background-color: #ea9c14;
+        color: #fff;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"] {
+      display: absolute;
+    }
+    ul.ks-cboxtags li input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+    }
+    ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+      border: 2px solid #624cd5;
+    }
+    .custom-file-upload {
+        border: 2px solid #624cd5;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 2px 2px;
+        cursor: pointer;
+      }
+      button{
+        background-color: #624cd5;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      button:hover{
+        background-color: #ea9c14;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        outline: none;
+      }
+      lottie-player{
+        height: auto;
+        width: 350px;
+        margin: auto;  
+      }
+}
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body,
+    html{
+        margin:0;
+      padding:0;
+      background-color: white;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      scroll-behavior: smooth;
+    }
+    .container{
+      margin: 10px;
+    }
+    h1,p{
+      color: #624cd5;
+      font-weight: 600;
+      text-align: justify;
+    }
+    p{
+    font-size: 24px;
+    padding: 5px;
+    margin: 5px;
+    }
+    .col-md-2 #p1{
+      font-size: 25px;
+      text-align: justify;
+    }
+    .row{
+      display: block;
+    }
+    .col-md-1 {
+      width: 100%;
+    }
+    .col-md-2{
+      width: 100%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .col-md-1{
+      display: block;
+    }
+    .col-md-2{
+      display: block;
+    }
+  
+    label #res {
+        background-color: #624cd5;
+        color: white;
+        padding: 0.5rem;
+        font-family: sans-serif;
+        border-radius: 0.1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    ul.ks-cboxtags {
+        list-style: none;
+        padding: 2px;
+    }
+    ul.ks-cboxtags li{
+      display: inline;
+    }
+    ul.ks-cboxtags li label{
+        display: inline-block;
+        background-color: white;
+        border: 2px solid #624cd5;
+        color: #624cd5;
+        border-radius: 10px;
+        white-space: nowrap;
+        margin: 2px 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li label {
+        padding: 4px 6px;
+        cursor: pointer;
+    }
+    
+    ul.ks-cboxtags li label::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 18px;
+        padding: 2px 4px 2px 2px;
+        content: "\f067";
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+        content: "\f00c";
+        transform: rotate(-360deg);
+        transition: transform .3s ease-in-out;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+        border: 2px solid #624cd5;
+        background-color: #ea9c14;
+        color: #fff;
+        transition: all .2s;
+    }
+    
+    ul.ks-cboxtags li input[type="checkbox"] {
+      display: absolute;
+    }
+    ul.ks-cboxtags li input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+    }
+    ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+      border: 2px solid #624cd5;
+    }
+    .custom-file-upload {
+        border: 2px solid #624cd5;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 2px 2px;
+        cursor: pointer;
+        font-size: 28px;
+      }
+    
+      
+}
+/* ----------- Galaxy A series----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 271px) 
+and (max-device-width: 760px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  body,
+  html{
+      margin:0;
+    padding:0;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+  }
+  .container{
+    margin: 10px;
+  }
+  h1,p{
+    color: #624cd5;
+    font-weight: 600;
+    text-align: justify;
+  }
+  p{
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  }
+  .col-md-2 #p1{
+    font-size: 15px;
+    text-align: justify;
+  }
+  .row{
+    display: block;
+  }
+  .col-md-1 {
+    width: 100%;
+  }
+  .col-md-2{
+    width: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .col-md-1{
+    display: block;
+  }
+  .col-md-2{
+    display: block;
+  }
+  .col-md-2 a{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .col-md-2 p{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .col-md-2 p:hover{
+    text-decoration: none;
+    transition: all .4s;
+    
+  }
+  .col-md-2 a:hover{
+    text-decoration: none;
+    transition: all .4s;
+  }
+  label #res {
+      background-color: #624cd5;
+      color: white;
+      padding: 0.5rem;
+      font-family: sans-serif;
+      border-radius: 0.1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+  }
+  ul.ks-cboxtags {
+      list-style: none;
+      padding: 2px;
+  }
+  ul.ks-cboxtags li{
+    display: inline;
+  }
+  ul.ks-cboxtags li label{
+      display: inline-block;
+      background-color: white;
+      border: 2px solid #624cd5;
+      color: #624cd5;
+      border-radius: 10px;
+      white-space: nowrap;
+      margin: 2px 0px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: all .2s;
+  }
+  
+  ul.ks-cboxtags li label {
+      padding: 4px 6px;
+      cursor: pointer;
+  }
+  
+  ul.ks-cboxtags li label::before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 8px;
+      padding: 2px 4px 2px 2px;
+      content: "\f067";
+      transition: transform .3s ease-in-out;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+      content: "\f00c";
+      transform: rotate(-360deg);
+      transition: transform .3s ease-in-out;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+      border: 2px solid #624cd5;
+      background-color: #ea9c14;
+      color: #fff;
+      transition: all .2s;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"] {
+    display: absolute;
+  }
+  ul.ks-cboxtags li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+  ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+    border: 2px solid #624cd5;
+  }
+  .custom-file-upload {
+      border: 2px solid #624cd5;
+      border-radius: 10px;
+      display: inline-block;
+      padding: 2px 2px;
+      cursor: pointer;
+    }
+    button{
+      background-color: #624cd5;
+      color: white;
+      padding: 5px;
+      border-radius: 10px;
+      transition: all 0.4s;
+      outline: none;
+    }
+    button:hover{
+      background-color: #ea9c14;
+      color: white;
+      padding: 5px;
+      border-radius: 10px;
+      transition: all 0.4s;
+      outline: none;
+    }
+    lottie-player{
+      height: auto;
+      width: 150px;
+      margin: auto;  
+    }
+}

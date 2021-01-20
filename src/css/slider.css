@@ -1,0 +1,981 @@
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 340px;
+}
+
+h1 {
+  color: #624cd5;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+
+/** page structure **/
+#w {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px 2px;
+}
+
+
+/** posts slider widget **/
+.crsl-items {
+  display: block;
+  padding: 5px;
+}
+
+.crsl-item {
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px;
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.crsl-item .thumbnail img { 
+  display: block; /* fix 1px image space http://stackoverflow.com/q/5804256/477958 */
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.crsl-item .thumbnail:hover img {
+  opacity: 0.8;
+}
+
+.crsl-item h3 {
+  color: #624cd5;
+  font-size: 1.95em;
+  line-height: 1.25em;
+  margin-bottom: 12px;
+}
+.crsl-item h3 a {
+  text-decoration: none;
+  color: #ea914c ;
+}
+.crsl-item h3 a:hover {
+  color: #dc143c;
+  text-decoration: underline;
+}
+
+.crsl-item .postdate {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 6px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+  font-size: 1em;
+  font-weight: bold;
+  background: #624cd5;
+  border-radius: 5px 0 0 0;
+}
+
+.crsl-item p {
+  line-height: 1.55em;
+  margin-bottom: 5px;
+}
+
+.crsl-item p.readmore a {
+  display: block;
+  float: right;
+  color: #624cd5;
+  padding: 3px 5px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.crsl-item p.readmore a:hover {
+  background: #dc143c ;
+  color: #fff;
+}
+
+
+/** posts slider nav **/
+.slidernav {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.slidernav a {
+  display: inline-block;
+  padding: 5px 8px;
+  margin-right: 8px;
+  font-size: 1.4em;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 2px #ea914c ;
+  -moz-box-shadow: 2px 2px 2px #ea914c ;
+  box-shadow: 2px 2px 2px #ea914c ;
+}
+.slidernav a:active {
+  -webkit-box-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+
+/** media queries **/
+@media screen and (max-width: 660px) {
+  h1 { font-size: 2.4em; line-height: 1.2em; }
+  
+  .crsl-item h3 { font-size: 1.65em; }
+}
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* ----------- Apple watch ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 272px) 
+  and (max-device-width: 340px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+ border-spacing: 0; 
+ display: block;
+}
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 120px;
+}
+/** page structure **/
+#w {
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 2px 2px;
+}
+h1 {
+font-size: 12px;
+color: #624cd5;
+text-align: center;
+font-weight: bold;
+text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+/** posts slider widget **/
+.crsl-items {
+display: block;
+padding: 8px;
+}
+
+.crsl-item {
+border-radius: 10px;
+background: #fff;
+padding: 5px;
+-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+display: block;
+position: relative;
+margin-bottom: 5px;
+cursor: pointer;
+border-radius: 10px;
+}
+.crsl-item .postdate {
+display: block;
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 2px;
+color: #fff;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+font-size: 0.5em;
+font-weight: bold;
+background: #624cd5;
+border-radius: 5px 0 0 0;
+}
+  }
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+   border-spacing: 0; 
+   display: block;
+  }
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 340px;
+}
+  }
+/* ----------- Android ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 576px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+   border-spacing: 0; 
+   display: block;
+  }
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 150px;
+}
+/** page structure **/
+#w {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px 2px;
+}
+h1 {
+  font-size: 18px;
+  color: #624cd5;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+/** posts slider widget **/
+.crsl-items {
+  display: block;
+  padding: 5px;
+}
+
+.crsl-item {
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px;
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.crsl-item .postdate {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+  font-size: 0.8em;
+  font-weight: bold;
+  background: #624cd5;
+  border-radius: 5px 0 0 0;
+}
+
+  }
+/* ----------- Iphone 5/SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+   border-spacing: 0; 
+   display: block;
+  }
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 150px;
+}
+/** page structure **/
+#w {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px 2px;
+}
+
+
+/** posts slider widget **/
+.crsl-items {
+  display: block;
+  padding: 5px;
+}
+
+.crsl-item {
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px;
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.crsl-item .postdate {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 4px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+  font-size: 0.8em;
+  font-weight: bold;
+  background: #624cd5;
+  border-radius: 5px 0 0 0;
+}
+
+  }
+/* ----------- Android Moto G4/S5----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+   border-spacing: 0; 
+   display: block;
+  }
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 150px;
+}
+/** page structure **/
+#w {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px 2px;
+}
+
+
+/** posts slider widget **/
+.crsl-items {
+  display: block;
+  padding: 5px;
+}
+
+.crsl-item {
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px;
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.crsl-item .postdate {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+  font-size: 0.8em;
+  font-weight: bold;
+  background: #624cd5;
+  border-radius: 5px 0 0 0;
+}
+
+  }
+/* ----------- Pixel ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 411px) 
+  and (max-device-width: 731px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+   border-spacing: 0; 
+   display: block;
+  }
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 200px;
+}
+/** page structure **/
+#w {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px 2px;
+}
+
+
+/** posts slider widget **/
+.crsl-items {
+  display: block;
+  padding: 5px;
+}
+
+.crsl-item {
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px;
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.crsl-item .postdate {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+  font-size: 0.8em;
+  font-weight: bold;
+  background: #624cd5;
+  border-radius: 5px 0 0 0;
+}
+
+  }
+  /* ----------- Iphone 6/7/8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+ border-spacing: 0; 
+ display: block;
+}
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 150px;
+}
+/** page structure **/
+#w {
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 2px 2px;
+}
+h1 {
+font-size: 18px;
+color: #624cd5;
+text-align: center;
+font-weight: bold;
+text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+/** posts slider widget **/
+.crsl-items {
+display: block;
+padding: 5px;
+}
+
+.crsl-item {
+border-radius: 10px;
+background: #fff;
+padding: 8px;
+-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+display: block;
+position: relative;
+margin-bottom: 5px;
+cursor: pointer;
+border-radius: 10px;
+}
+.crsl-item .postdate {
+display: block;
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 5px;
+color: #fff;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+font-size: 0.8em;
+font-weight: bold;
+background: #624cd5;
+border-radius: 5px 0 0 0;
+}
+
+}
+  /* ----------- Iphone 6/7/8 plus ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+ border-spacing: 0; 
+ display: block;
+}
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 200px;
+}
+/** page structure **/
+#w {
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 2px 2px;
+}
+h1 {
+font-size: 18px;
+color: #624cd5;
+text-align: center;
+font-weight: bold;
+text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+/** posts slider widget **/
+.crsl-items {
+display: block;
+padding: 5px;
+}
+
+.crsl-item {
+border-radius: 10px;
+background: #fff;
+padding: 8px;
+-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+display: block;
+position: relative;
+margin-bottom: 5px;
+cursor: pointer;
+border-radius: 10px;
+}
+.crsl-item .postdate {
+display: block;
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 5px;
+color: #fff;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+font-size: 0.8em;
+font-weight: bold;
+background: #624cd5;
+border-radius: 5px 0 0 0;
+}
+
+}
+  /* ----------- Iphone x ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 875px)
+and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+ border-spacing: 0; 
+ display: block;
+}
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 190px;
+}
+/** page structure **/
+#w {
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 2px 2px;
+}
+h1 {
+font-size: 18px;
+color: #624cd5;
+text-align: center;
+font-weight: bold;
+text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+/** posts slider widget **/
+.crsl-items {
+display: block;
+padding: 5px;
+}
+
+.crsl-item {
+border-radius: 10px;
+background: #fff;
+padding: 8px;
+-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+display: block;
+position: relative;
+margin-bottom: 5px;
+cursor: pointer;
+border-radius: 10px;
+}
+.crsl-item .postdate {
+display: block;
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 5px;
+color: #fff;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+font-size: 0.8em;
+font-weight: bold;
+background: #624cd5;
+border-radius: 5px 0 0 0;
+}
+
+}
+  /* ----------- Apple Ipad ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+ border-spacing: 0; 
+ display: block;
+}
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 250px;
+}
+/** page structure **/
+#w {
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 2px 2px;
+}
+h1 {
+font-size: 28px;
+color: #624cd5;
+text-align: center;
+font-weight: bold;
+text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+/** posts slider widget **/
+.crsl-items {
+display: block;
+padding: 8px;
+}
+
+.crsl-item {
+border-radius: 10px;
+background: #fff;
+padding: 10px;
+-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+display: block;
+position: relative;
+margin-bottom: 5px;
+cursor: pointer;
+border-radius: 10px;
+}
+.crsl-item .postdate {
+display: block;
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 8px;
+color: #fff;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+font-size: 1.0em;
+font-weight: bold;
+background: #624cd5;
+border-radius: 5px 0 0 0;
+}
+
+}
+  /* ----------- Apple Ipad ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1366px)
+and (-webkit-min-device-pixel-ratio: 2) {
+table 
+{ border-collapse: collapse;
+ border-spacing: 0; 
+ display: block;
+}
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 300px;
+}
+/** page structure **/
+#w {
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 2px 2px;
+}
+h1 {
+font-size: 28px;
+color: #624cd5;
+text-align: center;
+font-weight: bold;
+text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+/** posts slider widget **/
+.crsl-items {
+display: block;
+padding: 8px;
+}
+
+.crsl-item {
+border-radius: 10px;
+background: #fff;
+padding: 10px;
+-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+display: block;
+position: relative;
+margin-bottom: 5px;
+cursor: pointer;
+border-radius: 10px;
+}
+.crsl-item .postdate {
+display: block;
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 10px;
+color: #fff;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+font-size: 1.4em;
+font-weight: bold;
+background: #624cd5;
+border-radius: 5px 0 0 0;
+}
+
+}
+/* ----------- Nexus 9 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 1536px) 
+  and (device-height: 2048px) 
+  and (-webkit-min-device-pixel-ratio: 1.331) 
+  and (-webkit-max-device-pixel-ratio: 1.332) {
+    table 
+{ border-collapse: collapse;
+ border-spacing: 0; 
+ display: block;
+}
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 300px;
+}
+/** page structure **/
+#w {
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 2px 2px;
+}
+h1 {
+font-size: 28px;
+color: #624cd5;
+text-align: center;
+font-weight: bold;
+text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+/** posts slider widget **/
+.crsl-items {
+display: block;
+padding: 8px;
+}
+
+.crsl-item {
+border-radius: 10px;
+background: #fff;
+padding: 10px;
+-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+display: block;
+position: relative;
+margin-bottom: 5px;
+cursor: pointer;
+border-radius: 10px;
+}
+.crsl-item .postdate {
+display: block;
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 10px;
+color: #fff;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+font-size: 2em;
+font-weight: bold;
+background: #624cd5;
+border-radius: 5px 0 0 0;
+}
+
+}
+  /* ----------- Galaxy A series----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 271px) 
+and (max-device-width: 760px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  table 
+{ border-collapse: collapse;
+ border-spacing: 0; 
+ display: block;
+}
+
+img { border: 0; max-width: 100%; 
+border-radius: 10px;
+height: 120px;
+}
+/** page structure **/
+#w {
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 2px 2px;
+}
+h1 {
+font-size: 12px;
+color: #624cd5;
+text-align: center;
+font-weight: bold;
+text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+/** posts slider widget **/
+.crsl-items {
+display: block;
+padding: 8px;
+}
+
+.crsl-item {
+border-radius: 10px;
+background: #fff;
+padding: 5px;
+-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item .thumbnail {
+display: block;
+position: relative;
+margin-bottom: 5px;
+cursor: pointer;
+border-radius: 10px;
+}
+.crsl-item .postdate {
+display: block;
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 2px;
+color: #fff;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+font-size: 0.5em;
+font-weight: bold;
+background: #624cd5;
+border-radius: 5px 0 0 0;
+}
+  }

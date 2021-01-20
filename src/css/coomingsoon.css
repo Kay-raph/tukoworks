@@ -1,0 +1,64 @@
+.appstore img{
+    margin: 10px;
+    width: 50%;
+    height: 20%;
+}
+.playstore img{
+    margin: 10px;
+    width: 50%;
+    height: 20%;
+}
+.col-sm-12 #app{
+    float: left;
+    width: 50%;
+}
+.col-sm-12 #pla{
+    float: right;
+    width: 50%;
+}
+.row #wor{
+    clear: both;
+    display: flex;
+}
+ /* Clear floats after the columns */
+ .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* ----------- Surface Duo ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 540px) 
+and (max-device-width: 720px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .appstore img{
+        margin: 10px;
+        width: 40%;
+        height: 15%;
+    }
+    .playstore img{
+        margin: 10px;
+        width: 40%;
+        height: 15%;
+    }
+    .col-sm-12 #app{
+        float: left;
+        width: 50%;
+    }
+    .col-sm-12 #pla{
+        float: right;
+        width: 50%;
+    }
+    .row #wor{
+        clear: both;
+        display: flex;
+    }
+     /* Clear floats after the columns */
+     .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+}
