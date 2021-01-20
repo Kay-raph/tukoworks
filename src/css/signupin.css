@@ -483,6 +483,7 @@ label.valid {
   padding-bottom: 87px; }
 
 .social-login {
+  display: block;
   align-items: center;
   -moz-align-items: center;
   -webkit-align-items: center;
@@ -491,7 +492,7 @@ label.valid {
   margin-top: 80px; }
 
 .social-label {
-  display: inline-block;
+  display: block;
   margin-right: 15px; }
 
 .socials li {
@@ -501,15 +502,16 @@ label.valid {
   .socials li a {
     text-decoration: none; }
     .socials li a i {
-      width: 50px;
+      margin-left: 8vw;
+      width: 15vw;
       height: 50px;
       color: #fff;
       font-size: 24px;
-      border-radius: 50px;
-      -moz-border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -o-border-radius: 50px;
-      -ms-border-radius: 50px;
+      border-radius: 20px;
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -o-border-radius: 20px;
+      -ms-border-radius: 20px;
       transform: translateZ(0);
       -moz-transform: translateZ(0);
       -webkit-transform: translateZ(0);
